@@ -1,0 +1,21 @@
+# curation.yaml
+#
+# Persistent curation decisions. Repos listed here keep their state across
+# every `just sync-repos` run. This is where YOU make editorial calls about
+# what to do with repos discovered in repos-raw.yaml.
+#
+# Identifiers use the `org/name` format (same as GitHub).
+#
+# State priority (computed at sync time, written to repos-raw.yaml as `status`):
+#   1. included    — the repo has a full entry in projects.yaml
+#   2. excluded    — listed below in `excluded:` (never shows in `just uncurated`)
+#   3. todo        — listed below in `todo:` (shortlist for curation)
+#   4. unreviewed  — default; hasn't been triaged yet
+#
+# Helper recipes:
+#   just exclude <org/name>    — append to excluded list
+#   just mark-todo <org/name>  — append to todo list
+#   just unmark <org/name>     — remove from both lists (back to unreviewed)
+
+excluded: []
+todo: []

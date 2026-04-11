@@ -30,24 +30,42 @@ echo "Syncing public repos from owners in ${CONFIG}:"
 printf '%s\n' "$ALL_OWNERS" | sed 's/^/  - /'
 echo ""
 
-# --- Build lookup of repos already curated into projects.yaml -----------------
+# --- Build lookup sets for status computation ---------------------------------
 
-CATALOG_REPOS=""
+CURATION="curation.yaml"
+
+# URLs of repos already curated into projects.yaml (match on full URL)
+CATALOG_URLS=""
 if [ -f "$CATALOG" ]; then
-    CATALOG_REPOS=$(yq '.projects[]?.repo // ""' "$CATALOG" 2>/dev/null | grep -v '^$' || true)
+    CATALOG_URLS=$(yq -r '.projects[]?.repo // ""' "$CATALOG" 2>/dev/null | grep -v '^$' || true)
 fi
 
-in_catalog() {
+# org/name identifiers from curation.yaml
+EXCLUDED_IDS=""
+TODO_IDS=""
+if [ -f "$CURATION" ]; then
+    EXCLUDED_IDS=$(yq -r '.excluded[]? // ""' "$CURATION" 2>/dev/null | grep -v '^$' || true)
+    TODO_IDS=$(yq -r '.todo[]? // ""' "$CURATION" 2>/dev/null | grep -v '^$' || true)
+fi
+
+# Compute status for a repo.
+# Priority: included > excluded > todo > unreviewed
+compute_status() {
     local url="$1"
-    if [ -z "$CATALOG_REPOS" ]; then
-        echo "false"
+    local id="$2"
+    if [ -n "$CATALOG_URLS" ] && printf '%s\n' "$CATALOG_URLS" | grep -qxF "$url"; then
+        echo "included"
         return
     fi
-    if printf '%s\n' "$CATALOG_REPOS" | grep -qxF "$url"; then
-        echo "true"
-    else
-        echo "false"
+    if [ -n "$EXCLUDED_IDS" ] && printf '%s\n' "$EXCLUDED_IDS" | grep -qxF "$id"; then
+        echo "excluded"
+        return
     fi
+    if [ -n "$TODO_IDS" ] && printf '%s\n' "$TODO_IDS" | grep -qxF "$id"; then
+        echo "todo"
+        return
+    fi
+    echo "unreviewed"
 }
 
 # --- Emit header --------------------------------------------------------------
@@ -93,7 +111,8 @@ for owner in $ALL_OWNERS; do
         created=$(echo "$repo" | jq -r '.createdAt' | cut -d'T' -f1)
         pushed=$(echo "$repo" | jq -r '.pushedAt' | cut -d'T' -f1)
 
-        curated=$(in_catalog "$url")
+        id="${owner}/${name}"
+        status=$(compute_status "$url" "$id")
 
         # Escape backslashes and double-quotes for YAML double-quoted string
         desc_escaped=$(printf '%s' "$desc" | sed 's/\\/\\\\/g; s/"/\\"/g')
@@ -107,7 +126,7 @@ for owner in $ALL_OWNERS; do
     stars: ${stars}
     created: ${created}
     pushed: ${pushed}
-    in_catalog: ${curated}
+    status: ${status}
 REPO
     done
 

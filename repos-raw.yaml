@@ -4,7 +4,7 @@
 # accessible GitHub orgs. Curate from this file into projects.yaml to choose
 # what appears in your catalog.
 #
-# Last synced: 2026-04-11T12:05:32Z
+# Last synced: 2026-04-11T13:16:10Z
 
 repos:
   - name: lancekrogers
@@ -15,7 +15,7 @@ repos:
     stars: 2
     created: 2025-05-10
     pushed: 2026-04-09
-    in_catalog: false
+    status: unreviewed
   - name: yt_summarizer
     org: lancekrogers
     url: https://github.com/lancekrogers/yt_summarizer
@@ -24,7 +24,7 @@ repos:
     stars: 1
     created: 2025-05-25
     pushed: 2026-04-02
-    in_catalog: false
+    status: unreviewed
   - name: nvim-config
     org: lancekrogers
     url: https://github.com/lancekrogers/nvim-config
@@ -33,7 +33,7 @@ repos:
     stars: 0
     created: 2024-07-28
     pushed: 2026-03-29
-    in_catalog: false
+    status: unreviewed
   - name: Obey-Agent-Economy
     org: lancekrogers
     url: https://github.com/lancekrogers/Obey-Agent-Economy
@@ -42,7 +42,7 @@ repos:
     stars: 2
     created: 2026-02-16
     pushed: 2026-03-23
-    in_catalog: false
+    status: unreviewed
   - name: dashboard
     org: lancekrogers
     url: https://github.com/lancekrogers/dashboard
@@ -51,7 +51,7 @@ repos:
     stars: 1
     created: 2026-02-18
     pushed: 2026-03-23
-    in_catalog: false
+    status: unreviewed
   - name: agent-defi
     org: lancekrogers
     url: https://github.com/lancekrogers/agent-defi
@@ -60,7 +60,7 @@ repos:
     stars: 0
     created: 2026-02-18
     pushed: 2026-03-23
-    in_catalog: false
+    status: unreviewed
   - name: agent-coordinator
     org: lancekrogers
     url: https://github.com/lancekrogers/agent-coordinator
@@ -69,7 +69,7 @@ repos:
     stars: 1
     created: 2026-02-18
     pushed: 2026-03-23
-    in_catalog: false
+    status: unreviewed
   - name: agent-inference
     org: lancekrogers
     url: https://github.com/lancekrogers/agent-inference
@@ -78,7 +78,7 @@ repos:
     stars: 0
     created: 2026-02-18
     pushed: 2026-03-23
-    in_catalog: false
+    status: unreviewed
   - name: hiero-plugin
     org: lancekrogers
     url: https://github.com/lancekrogers/hiero-plugin
@@ -87,7 +87,7 @@ repos:
     stars: 1
     created: 2026-02-18
     pushed: 2026-03-22
-    in_catalog: false
+    status: unreviewed
   - name: guild-core
     org: lancekrogers
     url: https://github.com/lancekrogers/guild-core
@@ -96,7 +96,7 @@ repos:
     stars: 0
     created: 2025-04-21
     pushed: 2026-03-20
-    in_catalog: false
+    status: unreviewed
   - name: nvim-token-counter
     org: lancekrogers
     url: https://github.com/lancekrogers/nvim-token-counter
@@ -105,7 +105,7 @@ repos:
     stars: 3
     created: 2026-01-13
     pushed: 2026-03-18
-    in_catalog: false
+    status: unreviewed
   - name: tcount
     org: lancekrogers
     url: https://github.com/lancekrogers/tcount
@@ -114,7 +114,7 @@ repos:
     stars: 1
     created: 2026-01-28
     pushed: 2026-03-18
-    in_catalog: false
+    status: unreviewed
   - name: guild-scaffold
     org: lancekrogers
     url: https://github.com/lancekrogers/guild-scaffold
@@ -123,7 +123,7 @@ repos:
     stars: 0
     created: 2026-01-15
     pushed: 2026-03-18
-    in_catalog: false
+    status: unreviewed
   - name: contracts
     org: lancekrogers
     url: https://github.com/lancekrogers/contracts
@@ -132,7 +132,7 @@ repos:
     stars: 1
     created: 2026-02-18
     pushed: 2026-03-17
-    in_catalog: false
+    status: unreviewed
   - name: json_ical
     org: lancekrogers
     url: https://github.com/lancekrogers/json_ical
@@ -141,7 +141,7 @@ repos:
     stars: 0
     created: 2025-11-19
     pushed: 2026-03-16
-    in_catalog: false
+    status: unreviewed
   - name: agent-prediction
     org: lancekrogers
     url: https://github.com/lancekrogers/agent-prediction
@@ -150,7 +150,7 @@ repos:
     stars: 0
     created: 2026-03-14
     pushed: 2026-03-14
-    in_catalog: false
+    status: unreviewed
   - name: cre-risk-router
     org: lancekrogers
     url: https://github.com/lancekrogers/cre-risk-router
@@ -159,7 +159,7 @@ repos:
     stars: 1
     created: 2026-03-02
     pushed: 2026-03-12
-    in_catalog: false
+    status: unreviewed
   - name: homebrew-tap
     org: lancekrogers
     url: https://github.com/lancekrogers/homebrew-tap
@@ -168,7 +168,7 @@ repos:
     stars: 0
     created: 2025-06-12
     pushed: 2026-02-24
-    in_catalog: false
+    status: unreviewed
   - name: clipsync
     org: lancekrogers
     url: https://github.com/lancekrogers/clipsync
@@ -177,7 +177,7 @@ repos:
     stars: 0
     created: 2025-06-12
     pushed: 2026-02-16
-    in_catalog: false
+    status: unreviewed
   - name: claude-kitchen-campaign
     org: lancekrogers
     url: https://github.com/lancekrogers/claude-kitchen-campaign
@@ -186,7 +186,7 @@ repos:
     stars: 0
     created: 2026-02-13
     pushed: 2026-02-13
-    in_catalog: false
+    status: unreviewed
   - name: gomod-rename
     org: lancekrogers
     url: https://github.com/lancekrogers/gomod-rename
@@ -195,7 +195,7 @@ repos:
     stars: 0
     created: 2025-12-09
     pushed: 2026-02-05
-    in_catalog: false
+    status: unreviewed
   - name: claude-code-go
     org: lancekrogers
     url: https://github.com/lancekrogers/claude-code-go
@@ -204,7 +204,7 @@ repos:
     stars: 40
     created: 2025-05-20
     pushed: 2026-01-12
-    in_catalog: false
+    status: unreviewed
   - name: mermaider.nvim
     org: lancekrogers
     url: https://github.com/lancekrogers/mermaider.nvim
@@ -213,7 +213,7 @@ repos:
     stars: 1
     created: 2025-07-24
     pushed: 2026-01-06
-    in_catalog: false
+    status: unreviewed
   - name: algo-scales-vim
     org: lancekrogers
     url: https://github.com/lancekrogers/algo-scales-vim
@@ -222,7 +222,7 @@ repos:
     stars: 0
     created: 2025-05-28
     pushed: 2025-12-30
-    in_catalog: false
+    status: unreviewed
   - name: script-to-grab-claude-code-docs-from-anthropic
     org: lancekrogers
     url: https://github.com/lancekrogers/script-to-grab-claude-code-docs-from-anthropic
@@ -231,7 +231,7 @@ repos:
     stars: 0
     created: 2025-05-20
     pushed: 2025-12-17
-    in_catalog: false
+    status: unreviewed
   - name: festival_ebook_planning
     org: lancekrogers
     url: https://github.com/lancekrogers/festival_ebook_planning
@@ -240,7 +240,7 @@ repos:
     stars: 0
     created: 2025-08-14
     pushed: 2025-09-08
-    in_catalog: false
+    status: unreviewed
   - name: lancekrogers.com
     org: lancekrogers
     url: https://github.com/lancekrogers/lancekrogers.com
@@ -249,7 +249,7 @@ repos:
     stars: 0
     created: 2025-06-16
     pushed: 2025-07-01
-    in_catalog: false
+    status: unreviewed
   - name: algo-scales
     org: lancekrogers
     url: https://github.com/lancekrogers/algo-scales
@@ -258,7 +258,7 @@ repos:
     stars: 2
     created: 2025-05-10
     pushed: 2025-06-23
-    in_catalog: false
+    status: unreviewed
   - name: django_trx_dashboard
     org: lancekrogers
     url: https://github.com/lancekrogers/django_trx_dashboard
@@ -267,7 +267,7 @@ repos:
     stars: 0
     created: 2025-06-13
     pushed: 2025-06-17
-    in_catalog: false
+    status: unreviewed
   - name: ai-project-portfolio
     org: lancekrogers
     url: https://github.com/lancekrogers/ai-project-portfolio
@@ -276,7 +276,7 @@ repos:
     stars: 0
     created: 2025-06-02
     pushed: 2025-06-02
-    in_catalog: false
+    status: unreviewed
   - name: Swapblocks
     org: lancekrogers
     url: https://github.com/lancekrogers/Swapblocks
@@ -285,7 +285,7 @@ repos:
     stars: 0
     created: 2025-05-10
     pushed: 2025-05-10
-    in_catalog: false
+    status: unreviewed
   - name: tree2scaffold
     org: lancekrogers
     url: https://github.com/lancekrogers/tree2scaffold
@@ -294,7 +294,7 @@ repos:
     stars: 1
     created: 2025-04-29
     pushed: 2025-05-07
-    in_catalog: false
+    status: unreviewed
   - name: Public-Gist
     org: lancekrogers
     url: https://github.com/lancekrogers/Public-Gist
@@ -303,7 +303,7 @@ repos:
     stars: 0
     created: 2024-04-15
     pushed: 2024-08-08
-    in_catalog: false
+    status: unreviewed
   - name: LunarVimConfig
     org: lancekrogers
     url: https://github.com/lancekrogers/LunarVimConfig
@@ -312,7 +312,7 @@ repos:
     stars: 0
     created: 2023-07-21
     pushed: 2024-07-13
-    in_catalog: false
+    status: unreviewed
   - name: lotr-golang-sdk
     org: lancekrogers
     url: https://github.com/lancekrogers/lotr-golang-sdk
@@ -321,7 +321,7 @@ repos:
     stars: 0
     created: 2023-10-27
     pushed: 2023-10-27
-    in_catalog: false
+    status: unreviewed
   - name: ens-proposal-emailer
     org: lancekrogers
     url: https://github.com/lancekrogers/ens-proposal-emailer
@@ -330,7 +330,7 @@ repos:
     stars: 0
     created: 2023-09-07
     pushed: 2023-09-27
-    in_catalog: false
+    status: unreviewed
   - name: ME-take-home-project
     org: lancekrogers
     url: https://github.com/lancekrogers/ME-take-home-project
@@ -339,7 +339,7 @@ repos:
     stars: 0
     created: 2023-08-08
     pushed: 2023-09-27
-    in_catalog: false
+    status: unreviewed
   - name: DataPipelineBI
     org: lancekrogers
     url: https://github.com/lancekrogers/DataPipelineBI
@@ -348,7 +348,7 @@ repos:
     stars: 0
     created: 2023-09-20
     pushed: 2023-09-20
-    in_catalog: false
+    status: unreviewed
   - name: CryptoExchangeCodingChallenge
     org: lancekrogers
     url: https://github.com/lancekrogers/CryptoExchangeCodingChallenge
@@ -357,7 +357,7 @@ repos:
     stars: 0
     created: 2021-10-13
     pushed: 2023-07-21
-    in_catalog: false
+    status: unreviewed
   - name: passthrough-finder
     org: lancekrogers
     url: https://github.com/lancekrogers/passthrough-finder
@@ -366,7 +366,7 @@ repos:
     stars: 0
     created: 2020-03-23
     pushed: 2020-03-23
-    in_catalog: false
+    status: unreviewed
   - name: iota_seed_generator
     org: lancekrogers
     url: https://github.com/lancekrogers/iota_seed_generator
@@ -375,7 +375,7 @@ repos:
     stars: 0
     created: 2016-07-15
     pushed: 2017-08-12
-    in_catalog: false
+    status: unreviewed
   - name: Udacity-ML-Boston-Housing-Project
     org: lancekrogers
     url: https://github.com/lancekrogers/Udacity-ML-Boston-Housing-Project
@@ -384,7 +384,7 @@ repos:
     stars: 0
     created: 2017-07-19
     pushed: 2017-07-29
-    in_catalog: false
+    status: unreviewed
   - name: skills-assesment
     org: lancekrogers
     url: https://github.com/lancekrogers/skills-assesment
@@ -393,7 +393,7 @@ repos:
     stars: 0
     created: 2016-02-29
     pushed: 2016-02-29
-    in_catalog: false
+    status: unreviewed
   - name: Useful_programs
     org: lancekrogers
     url: https://github.com/lancekrogers/Useful_programs
@@ -402,7 +402,7 @@ repos:
     stars: 0
     created: 2015-10-02
     pushed: 2016-02-19
-    in_catalog: false
+    status: unreviewed
   - name: androidWeatherAppTreehouse
     org: lancekrogers
     url: https://github.com/lancekrogers/androidWeatherAppTreehouse
@@ -411,7 +411,7 @@ repos:
     stars: 0
     created: 2016-01-13
     pushed: 2016-02-07
-    in_catalog: false
+    status: unreviewed
   - name: Android-Tutorial-2
     org: lancekrogers
     url: https://github.com/lancekrogers/Android-Tutorial-2
@@ -420,7 +420,7 @@ repos:
     stars: 0
     created: 2015-12-29
     pushed: 2016-01-06
-    in_catalog: false
+    status: unreviewed
   - name: FunFactsTreehouseAndriod
     org: lancekrogers
     url: https://github.com/lancekrogers/FunFactsTreehouseAndriod
@@ -429,7 +429,7 @@ repos:
     stars: 0
     created: 2015-12-20
     pushed: 2015-12-27
-    in_catalog: false
+    status: unreviewed
   - name: EtherMining
     org: lancekrogers
     url: https://github.com/lancekrogers/EtherMining
@@ -438,7 +438,7 @@ repos:
     stars: 0
     created: 2015-08-26
     pushed: 2015-08-25
-    in_catalog: false
+    status: unreviewed
   - name: andriodExample
     org: lancekrogers
     url: https://github.com/lancekrogers/andriodExample
@@ -447,7 +447,7 @@ repos:
     stars: 0
     created: 2015-08-18
     pushed: 2015-08-22
-    in_catalog: false
+    status: unreviewed
   - name: Django_practice
     org: lancekrogers
     url: https://github.com/lancekrogers/Django_practice
@@ -456,7 +456,7 @@ repos:
     stars: 0
     created: 2015-07-05
     pushed: 2015-07-05
-    in_catalog: false
+    status: unreviewed
   - name: contracts
     org: Blockhead-Consulting
     url: https://github.com/Blockhead-Consulting/contracts
@@ -465,7 +465,7 @@ repos:
     stars: 0
     created: 2026-03-01
     pushed: 2026-03-31
-    in_catalog: false
+    status: unreviewed
   - name: agent-defi
     org: Blockhead-Consulting
     url: https://github.com/Blockhead-Consulting/agent-defi
@@ -474,7 +474,7 @@ repos:
     stars: 0
     created: 2026-03-01
     pushed: 2026-03-31
-    in_catalog: false
+    status: unreviewed
   - name: agent-inference
     org: Blockhead-Consulting
     url: https://github.com/Blockhead-Consulting/agent-inference
@@ -483,7 +483,7 @@ repos:
     stars: 0
     created: 2026-03-01
     pushed: 2026-03-31
-    in_catalog: false
+    status: unreviewed
   - name: guild-framework
     org: Blockhead-Consulting
     url: https://github.com/Blockhead-Consulting/guild-framework
@@ -492,7 +492,7 @@ repos:
     stars: 0
     created: 2025-05-25
     pushed: 2025-06-02
-    in_catalog: false
+    status: unreviewed
   - name: SwapBlocks-Tools-and-Articles
     org: SwapBlocks
     url: https://github.com/SwapBlocks/SwapBlocks-Tools-and-Articles
@@ -501,7 +501,7 @@ repos:
     stars: 1
     created: 2018-09-02
     pushed: 2019-06-26
-    in_catalog: false
+    status: unreviewed
   - name: Swapblocks-Repo-Demo
     org: SwapBlocks
     url: https://github.com/SwapBlocks/Swapblocks-Repo-Demo
@@ -510,7 +510,7 @@ repos:
     stars: 0
     created: 2019-05-08
     pushed: 2019-05-11
-    in_catalog: false
+    status: unreviewed
   - name: whitepaper
     org: SwapBlocks
     url: https://github.com/SwapBlocks/whitepaper
@@ -519,7 +519,7 @@ repos:
     stars: 0
     created: 2019-02-18
     pushed: 2019-04-05
-    in_catalog: false
+    status: unreviewed
   - name: mockup
     org: SwapBlocks
     url: https://github.com/SwapBlocks/mockup
@@ -528,7 +528,7 @@ repos:
     stars: 1
     created: 2019-03-20
     pushed: 2019-03-20
-    in_catalog: false
+    status: unreviewed
   - name: peers
     org: SwapBlocks
     url: https://github.com/SwapBlocks/peers
@@ -537,7 +537,7 @@ repos:
     stars: 0
     created: 2019-01-16
     pushed: 2019-03-10
-    in_catalog: false
+    status: unreviewed
   - name: paper-wallet
     org: SwapBlocks
     url: https://github.com/SwapBlocks/paper-wallet
@@ -546,7 +546,7 @@ repos:
     stars: 3
     created: 2018-07-24
     pushed: 2019-01-08
-    in_catalog: false
+    status: unreviewed
   - name: commander
     org: SwapBlocks
     url: https://github.com/SwapBlocks/commander
@@ -555,7 +555,7 @@ repos:
     stars: 0
     created: 2018-09-01
     pushed: 2018-09-03
-    in_catalog: false
+    status: unreviewed
   - name: api_docs
     org: SwapBlocks
     url: https://github.com/SwapBlocks/api_docs
@@ -564,7 +564,7 @@ repos:
     stars: 0
     created: 2018-09-02
     pushed: 2018-09-02
-    in_catalog: false
+    status: unreviewed
   - name: camp
     org: Obedience-Corp
     url: https://github.com/Obedience-Corp/camp
@@ -573,7 +573,7 @@ repos:
     stars: 2
     created: 2026-01-16
     pushed: 2026-04-10
-    in_catalog: false
+    status: unreviewed
   - name: camp-graph
     org: Obedience-Corp
     url: https://github.com/Obedience-Corp/camp-graph
@@ -582,7 +582,7 @@ repos:
     stars: 1
     created: 2026-02-26
     pushed: 2026-04-10
-    in_catalog: false
+    status: unreviewed
   - name: .github
     org: Obedience-Corp
     url: https://github.com/Obedience-Corp/.github
@@ -591,7 +591,7 @@ repos:
     stars: 0
     created: 2026-01-15
     pushed: 2026-04-09
-    in_catalog: false
+    status: unreviewed
   - name: ObedienceCorp.com
     org: Obedience-Corp
     url: https://github.com/Obedience-Corp/ObedienceCorp.com
@@ -600,7 +600,7 @@ repos:
     stars: 1
     created: 2026-01-19
     pushed: 2026-04-07
-    in_catalog: false
+    status: unreviewed
   - name: fest
     org: Obedience-Corp
     url: https://github.com/Obedience-Corp/fest
@@ -609,7 +609,7 @@ repos:
     stars: 1
     created: 2026-01-09
     pushed: 2026-04-03
-    in_catalog: false
+    status: unreviewed
   - name: homebrew-tap
     org: Obedience-Corp
     url: https://github.com/Obedience-Corp/homebrew-tap
@@ -618,7 +618,7 @@ repos:
     stars: 0
     created: 2026-02-25
     pushed: 2026-04-01
-    in_catalog: false
+    status: unreviewed
   - name: festival
     org: Obedience-Corp
     url: https://github.com/Obedience-Corp/festival
@@ -627,7 +627,7 @@ repos:
     stars: 14
     created: 2025-09-09
     pushed: 2026-04-01
-    in_catalog: false
+    status: unreviewed
   - name: obey-shared
     org: Obedience-Corp
     url: https://github.com/Obedience-Corp/obey-shared
@@ -636,7 +636,7 @@ repos:
     stars: 0
     created: 2026-02-18
     pushed: 2026-03-22
-    in_catalog: false
+    status: unreviewed
   - name: scoop-bucket
     org: Obedience-Corp
     url: https://github.com/Obedience-Corp/scoop-bucket
@@ -645,4 +645,4 @@ repos:
     stars: 0
     created: 2026-02-25
     pushed: 2026-02-25
-    in_catalog: false
+    status: unreviewed
