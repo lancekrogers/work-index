@@ -26,8 +26,36 @@ if [ -z "$ALL_OWNERS" ]; then
     exit 1
 fi
 
+# Owners for which forks should be pulled (drop the --source filter).
+INCLUDE_FORKS_FROM=$(yq -r '.include_forks_from[]? // ""' "$CONFIG" 2>/dev/null | grep -v '^$' || true)
+
+# Upstream owners whose forks should always be dropped (bootcamp/tutorial orgs).
+EXCLUDE_FORKS_FROM=$(yq -r '.exclude_forks_from[]? // ""' "$CONFIG" 2>/dev/null | grep -v '^$' || true)
+
+allows_forks() {
+    local owner="$1"
+    if [ -z "$INCLUDE_FORKS_FROM" ]; then
+        return 1
+    fi
+    printf '%s\n' "$INCLUDE_FORKS_FROM" | grep -qxF "$owner"
+}
+
+is_excluded_parent() {
+    local parent_owner="$1"
+    if [ -z "$EXCLUDE_FORKS_FROM" ] || [ -z "$parent_owner" ] || [ "$parent_owner" = "null" ]; then
+        return 1
+    fi
+    printf '%s\n' "$EXCLUDE_FORKS_FROM" | grep -qxF "$parent_owner"
+}
+
 echo "Syncing public repos from owners in ${CONFIG}:"
-printf '%s\n' "$ALL_OWNERS" | sed 's/^/  - /'
+for o in $ALL_OWNERS; do
+    if allows_forks "$o"; then
+        echo "  - ${o}  (forks included)"
+    else
+        echo "  - ${o}"
+    fi
+done
 echo ""
 
 # --- Build lookup sets for status computation ---------------------------------
@@ -86,14 +114,29 @@ HEADER
 # --- Fetch and emit -----------------------------------------------------------
 
 total=0
+skipped=0
+skipped_forks=0
+skipped_bootcamp=0
 for owner in $ALL_OWNERS; do
-    echo "Fetching public repos from ${owner}..."
+    # Per-owner: drop --source (exclude forks) if the owner is in include_forks_from.
+    source_flag="--source"
+    if allows_forks "$owner"; then
+        source_flag=""
+        echo "Fetching public repos from ${owner} (including forks)..."
+    else
+        echo "Fetching public repos from ${owner}..."
+    fi
+
+    # Note: --visibility public filters server-side. We also fetch the
+    # `visibility` field and assert it client-side as defense in depth,
+    # because this catalog will be made public and must NEVER contain
+    # references to private repos.
     repos_json=$(gh repo list "$owner" \
         --limit 1000 \
         --visibility public \
         --no-archived \
-        --source \
-        --json name,description,url,primaryLanguage,pushedAt,createdAt,stargazerCount,isArchived,isFork 2>/dev/null || echo "[]")
+        $source_flag \
+        --json name,visibility,description,url,primaryLanguage,pushedAt,createdAt,stargazerCount,isArchived,isFork,parent 2>/dev/null || echo "[]")
 
     count=$(echo "$repos_json" | jq 'length')
     if [ "$count" = "0" ]; then
@@ -101,8 +144,18 @@ for owner in $ALL_OWNERS; do
         continue
     fi
 
+    emitted=0
     # Emit each repo. Sorted by pushedAt descending so recent activity is on top per-owner.
-    echo "$repos_json" | jq -c 'sort_by(.pushedAt) | reverse | .[]' | while IFS= read -r repo; do
+    while IFS= read -r repo; do
+        # Defense in depth: skip anything not explicitly PUBLIC.
+        visibility=$(echo "$repo" | jq -r '.visibility')
+        if [ "$visibility" != "PUBLIC" ]; then
+            name=$(echo "$repo" | jq -r '.name')
+            echo "  SKIP (not public): ${owner}/${name} [visibility=${visibility}]" >&2
+            skipped=$((skipped + 1))
+            continue
+        fi
+
         name=$(echo "$repo" | jq -r '.name')
         url=$(echo "$repo" | jq -r '.url')
         desc=$(echo "$repo" | jq -r '.description // ""')
@@ -110,6 +163,26 @@ for owner in $ALL_OWNERS; do
         stars=$(echo "$repo" | jq -r '.stargazerCount')
         created=$(echo "$repo" | jq -r '.createdAt' | cut -d'T' -f1)
         pushed=$(echo "$repo" | jq -r '.pushedAt' | cut -d'T' -f1)
+        is_fork=$(echo "$repo" | jq -r '.isFork')
+        parent_owner=$(echo "$repo" | jq -r '.parent.owner.login // "null"')
+
+        # For forks: two layers of filtering.
+        #   1. Drop if the upstream is from an excluded parent org (bootcamp, etc.)
+        #   2. Drop if the owner has 0 commits (drive-by exploration)
+        owner_commits="null"
+        if [ "$is_fork" = "true" ]; then
+            if is_excluded_parent "$parent_owner"; then
+                skipped_bootcamp=$((skipped_bootcamp + 1))
+                continue
+            fi
+            owner_commits=$(gh api "repos/${owner}/${name}/contributors" \
+                --jq ".[] | select(.login == \"${owner}\") | .contributions" 2>/dev/null || echo "")
+            owner_commits=${owner_commits:-0}
+            if [ "$owner_commits" = "0" ]; then
+                skipped_forks=$((skipped_forks + 1))
+                continue
+            fi
+        fi
 
         id="${owner}/${name}"
         status=$(compute_status "$url" "$id")
@@ -126,13 +199,25 @@ for owner in $ALL_OWNERS; do
     stars: ${stars}
     created: ${created}
     pushed: ${pushed}
+    fork: ${is_fork}
+    owner_commits: ${owner_commits}
     status: ${status}
 REPO
-    done
+        emitted=$((emitted + 1))
+    done < <(echo "$repos_json" | jq -c 'sort_by(.pushedAt) | reverse | .[]')
 
-    total=$((total + count))
-    echo "  ${count} repos"
+    total=$((total + emitted))
+    echo "  ${emitted} repos"
 done
 
 echo ""
 echo "Synced ${total} public repos to ${OUTPUT}"
+if [ "$skipped_forks" -gt 0 ]; then
+    echo "Filtered out ${skipped_forks} drive-by forks (0 commits by owner)."
+fi
+if [ "$skipped_bootcamp" -gt 0 ]; then
+    echo "Filtered out ${skipped_bootcamp} forks from excluded parent orgs."
+fi
+if [ "$skipped" -gt 0 ]; then
+    echo "WARNING: Skipped ${skipped} non-public repos that somehow passed the --visibility filter." >&2
+fi

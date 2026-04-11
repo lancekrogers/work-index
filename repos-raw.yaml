@@ -4,7 +4,7 @@
 # accessible GitHub orgs. Curate from this file into projects.yaml to choose
 # what appears in your catalog.
 #
-# Last synced: 2026-04-11T13:16:10Z
+# Last synced: 2026-04-11T14:32:18Z
 
 repos:
   - name: lancekrogers
@@ -15,6 +15,8 @@ repos:
     stars: 2
     created: 2025-05-10
     pushed: 2026-04-09
+    fork: false
+    owner_commits: null
     status: unreviewed
   - name: yt_summarizer
     org: lancekrogers
@@ -24,6 +26,8 @@ repos:
     stars: 1
     created: 2025-05-25
     pushed: 2026-04-02
+    fork: false
+    owner_commits: null
     status: unreviewed
   - name: nvim-config
     org: lancekrogers
@@ -33,6 +37,8 @@ repos:
     stars: 0
     created: 2024-07-28
     pushed: 2026-03-29
+    fork: false
+    owner_commits: null
     status: unreviewed
   - name: Obey-Agent-Economy
     org: lancekrogers
@@ -42,6 +48,8 @@ repos:
     stars: 2
     created: 2026-02-16
     pushed: 2026-03-23
+    fork: false
+    owner_commits: null
     status: unreviewed
   - name: dashboard
     org: lancekrogers
@@ -51,6 +59,8 @@ repos:
     stars: 1
     created: 2026-02-18
     pushed: 2026-03-23
+    fork: false
+    owner_commits: null
     status: unreviewed
   - name: agent-defi
     org: lancekrogers
@@ -60,6 +70,8 @@ repos:
     stars: 0
     created: 2026-02-18
     pushed: 2026-03-23
+    fork: false
+    owner_commits: null
     status: unreviewed
   - name: agent-coordinator
     org: lancekrogers
@@ -69,6 +81,8 @@ repos:
     stars: 1
     created: 2026-02-18
     pushed: 2026-03-23
+    fork: false
+    owner_commits: null
     status: unreviewed
   - name: agent-inference
     org: lancekrogers
@@ -78,6 +92,8 @@ repos:
     stars: 0
     created: 2026-02-18
     pushed: 2026-03-23
+    fork: false
+    owner_commits: null
     status: unreviewed
   - name: hiero-plugin
     org: lancekrogers
@@ -87,6 +103,8 @@ repos:
     stars: 1
     created: 2026-02-18
     pushed: 2026-03-22
+    fork: false
+    owner_commits: null
     status: unreviewed
   - name: guild-core
     org: lancekrogers
@@ -96,6 +114,8 @@ repos:
     stars: 0
     created: 2025-04-21
     pushed: 2026-03-20
+    fork: false
+    owner_commits: null
     status: unreviewed
   - name: nvim-token-counter
     org: lancekrogers
@@ -105,6 +125,8 @@ repos:
     stars: 3
     created: 2026-01-13
     pushed: 2026-03-18
+    fork: false
+    owner_commits: null
     status: unreviewed
   - name: tcount
     org: lancekrogers
@@ -114,6 +136,8 @@ repos:
     stars: 1
     created: 2026-01-28
     pushed: 2026-03-18
+    fork: false
+    owner_commits: null
     status: unreviewed
   - name: guild-scaffold
     org: lancekrogers
@@ -123,6 +147,8 @@ repos:
     stars: 0
     created: 2026-01-15
     pushed: 2026-03-18
+    fork: false
+    owner_commits: null
     status: unreviewed
   - name: contracts
     org: lancekrogers
@@ -132,6 +158,8 @@ repos:
     stars: 1
     created: 2026-02-18
     pushed: 2026-03-17
+    fork: false
+    owner_commits: null
     status: unreviewed
   - name: json_ical
     org: lancekrogers
@@ -141,6 +169,8 @@ repos:
     stars: 0
     created: 2025-11-19
     pushed: 2026-03-16
+    fork: false
+    owner_commits: null
     status: unreviewed
   - name: agent-prediction
     org: lancekrogers
@@ -150,6 +180,8 @@ repos:
     stars: 0
     created: 2026-03-14
     pushed: 2026-03-14
+    fork: false
+    owner_commits: null
     status: unreviewed
   - name: cre-risk-router
     org: lancekrogers
@@ -159,6 +191,19 @@ repos:
     stars: 1
     created: 2026-03-02
     pushed: 2026-03-12
+    fork: false
+    owner_commits: null
+    status: unreviewed
+  - name: lazysql
+    org: lancekrogers
+    url: https://github.com/lancekrogers/lazysql
+    description: "A cross-platform TUI database management tool written in Go."
+    language: Go
+    stars: 0
+    created: 2025-12-28
+    pushed: 2026-03-06
+    fork: true
+    owner_commits: 29
     status: unreviewed
   - name: homebrew-tap
     org: lancekrogers
@@ -168,6 +213,8 @@ repos:
     stars: 0
     created: 2025-06-12
     pushed: 2026-02-24
+    fork: false
+    owner_commits: null
     status: unreviewed
   - name: clipsync
     org: lancekrogers
@@ -177,6 +224,8 @@ repos:
     stars: 0
     created: 2025-06-12
     pushed: 2026-02-16
+    fork: false
+    owner_commits: null
     status: unreviewed
   - name: claude-kitchen-campaign
     org: lancekrogers
@@ -186,6 +235,8 @@ repos:
     stars: 0
     created: 2026-02-13
     pushed: 2026-02-13
+    fork: false
+    owner_commits: null
     status: unreviewed
   - name: gomod-rename
     org: lancekrogers
@@ -195,6 +246,8 @@ repos:
     stars: 0
     created: 2025-12-09
     pushed: 2026-02-05
+    fork: false
+    owner_commits: null
     status: unreviewed
   - name: claude-code-go
     org: lancekrogers
@@ -204,6 +257,8 @@ repos:
     stars: 40
     created: 2025-05-20
     pushed: 2026-01-12
+    fork: false
+    owner_commits: null
     status: unreviewed
   - name: mermaider.nvim
     org: lancekrogers
@@ -213,6 +268,8 @@ repos:
     stars: 1
     created: 2025-07-24
     pushed: 2026-01-06
+    fork: false
+    owner_commits: null
     status: unreviewed
   - name: algo-scales-vim
     org: lancekrogers
@@ -222,6 +279,8 @@ repos:
     stars: 0
     created: 2025-05-28
     pushed: 2025-12-30
+    fork: false
+    owner_commits: null
     status: unreviewed
   - name: script-to-grab-claude-code-docs-from-anthropic
     org: lancekrogers
@@ -231,6 +290,8 @@ repos:
     stars: 0
     created: 2025-05-20
     pushed: 2025-12-17
+    fork: false
+    owner_commits: null
     status: unreviewed
   - name: festival_ebook_planning
     org: lancekrogers
@@ -240,6 +301,8 @@ repos:
     stars: 0
     created: 2025-08-14
     pushed: 2025-09-08
+    fork: false
+    owner_commits: null
     status: unreviewed
   - name: lancekrogers.com
     org: lancekrogers
@@ -249,6 +312,8 @@ repos:
     stars: 0
     created: 2025-06-16
     pushed: 2025-07-01
+    fork: false
+    owner_commits: null
     status: unreviewed
   - name: algo-scales
     org: lancekrogers
@@ -258,6 +323,8 @@ repos:
     stars: 2
     created: 2025-05-10
     pushed: 2025-06-23
+    fork: false
+    owner_commits: null
     status: unreviewed
   - name: django_trx_dashboard
     org: lancekrogers
@@ -267,6 +334,8 @@ repos:
     stars: 0
     created: 2025-06-13
     pushed: 2025-06-17
+    fork: false
+    owner_commits: null
     status: unreviewed
   - name: ai-project-portfolio
     org: lancekrogers
@@ -276,6 +345,8 @@ repos:
     stars: 0
     created: 2025-06-02
     pushed: 2025-06-02
+    fork: false
+    owner_commits: null
     status: unreviewed
   - name: Swapblocks
     org: lancekrogers
@@ -285,6 +356,8 @@ repos:
     stars: 0
     created: 2025-05-10
     pushed: 2025-05-10
+    fork: false
+    owner_commits: null
     status: unreviewed
   - name: tree2scaffold
     org: lancekrogers
@@ -294,6 +367,8 @@ repos:
     stars: 1
     created: 2025-04-29
     pushed: 2025-05-07
+    fork: false
+    owner_commits: null
     status: unreviewed
   - name: Public-Gist
     org: lancekrogers
@@ -303,6 +378,8 @@ repos:
     stars: 0
     created: 2024-04-15
     pushed: 2024-08-08
+    fork: false
+    owner_commits: null
     status: unreviewed
   - name: LunarVimConfig
     org: lancekrogers
@@ -312,6 +389,8 @@ repos:
     stars: 0
     created: 2023-07-21
     pushed: 2024-07-13
+    fork: false
+    owner_commits: null
     status: unreviewed
   - name: lotr-golang-sdk
     org: lancekrogers
@@ -321,6 +400,8 @@ repos:
     stars: 0
     created: 2023-10-27
     pushed: 2023-10-27
+    fork: false
+    owner_commits: null
     status: unreviewed
   - name: ens-proposal-emailer
     org: lancekrogers
@@ -330,6 +411,8 @@ repos:
     stars: 0
     created: 2023-09-07
     pushed: 2023-09-27
+    fork: false
+    owner_commits: null
     status: unreviewed
   - name: ME-take-home-project
     org: lancekrogers
@@ -339,6 +422,8 @@ repos:
     stars: 0
     created: 2023-08-08
     pushed: 2023-09-27
+    fork: false
+    owner_commits: null
     status: unreviewed
   - name: DataPipelineBI
     org: lancekrogers
@@ -348,6 +433,8 @@ repos:
     stars: 0
     created: 2023-09-20
     pushed: 2023-09-20
+    fork: false
+    owner_commits: null
     status: unreviewed
   - name: CryptoExchangeCodingChallenge
     org: lancekrogers
@@ -357,6 +444,30 @@ repos:
     stars: 0
     created: 2021-10-13
     pushed: 2023-07-21
+    fork: false
+    owner_commits: null
+    status: unreviewed
+  - name: kanban.nvim
+    org: lancekrogers
+    url: https://github.com/lancekrogers/kanban.nvim
+    description: "Kanban boad with Neovim!!"
+    language: Lua
+    stars: 0
+    created: 2023-02-14
+    pushed: 2023-05-26
+    fork: true
+    owner_commits: 1
+    status: unreviewed
+  - name: vim-log-highlighting
+    org: lancekrogers
+    url: https://github.com/lancekrogers/vim-log-highlighting
+    description: "Syntax highlighting for generic log files in VIM"
+    language: Vim Script
+    stars: 0
+    created: 2022-04-28
+    pushed: 2023-05-09
+    fork: true
+    owner_commits: 2
     status: unreviewed
   - name: passthrough-finder
     org: lancekrogers
@@ -366,6 +477,19 @@ repos:
     stars: 0
     created: 2020-03-23
     pushed: 2020-03-23
+    fork: false
+    owner_commits: null
+    status: unreviewed
+  - name: vim-colorstepper
+    org: lancekrogers
+    url: https://github.com/lancekrogers/vim-colorstepper
+    description: "Cycle easily through vim color schemes"
+    language: Vim Script
+    stars: 0
+    created: 2018-04-20
+    pushed: 2018-04-20
+    fork: true
+    owner_commits: 1
     status: unreviewed
   - name: iota_seed_generator
     org: lancekrogers
@@ -375,6 +499,8 @@ repos:
     stars: 0
     created: 2016-07-15
     pushed: 2017-08-12
+    fork: false
+    owner_commits: null
     status: unreviewed
   - name: Udacity-ML-Boston-Housing-Project
     org: lancekrogers
@@ -384,6 +510,8 @@ repos:
     stars: 0
     created: 2017-07-19
     pushed: 2017-07-29
+    fork: false
+    owner_commits: null
     status: unreviewed
   - name: skills-assesment
     org: lancekrogers
@@ -393,6 +521,8 @@ repos:
     stars: 0
     created: 2016-02-29
     pushed: 2016-02-29
+    fork: false
+    owner_commits: null
     status: unreviewed
   - name: Useful_programs
     org: lancekrogers
@@ -402,6 +532,8 @@ repos:
     stars: 0
     created: 2015-10-02
     pushed: 2016-02-19
+    fork: false
+    owner_commits: null
     status: unreviewed
   - name: androidWeatherAppTreehouse
     org: lancekrogers
@@ -411,6 +543,8 @@ repos:
     stars: 0
     created: 2016-01-13
     pushed: 2016-02-07
+    fork: false
+    owner_commits: null
     status: unreviewed
   - name: Android-Tutorial-2
     org: lancekrogers
@@ -420,6 +554,8 @@ repos:
     stars: 0
     created: 2015-12-29
     pushed: 2016-01-06
+    fork: false
+    owner_commits: null
     status: unreviewed
   - name: FunFactsTreehouseAndriod
     org: lancekrogers
@@ -429,6 +565,8 @@ repos:
     stars: 0
     created: 2015-12-20
     pushed: 2015-12-27
+    fork: false
+    owner_commits: null
     status: unreviewed
   - name: EtherMining
     org: lancekrogers
@@ -438,6 +576,8 @@ repos:
     stars: 0
     created: 2015-08-26
     pushed: 2015-08-25
+    fork: false
+    owner_commits: null
     status: unreviewed
   - name: andriodExample
     org: lancekrogers
@@ -447,6 +587,8 @@ repos:
     stars: 0
     created: 2015-08-18
     pushed: 2015-08-22
+    fork: false
+    owner_commits: null
     status: unreviewed
   - name: Django_practice
     org: lancekrogers
@@ -456,33 +598,8 @@ repos:
     stars: 0
     created: 2015-07-05
     pushed: 2015-07-05
-    status: unreviewed
-  - name: contracts
-    org: Blockhead-Consulting
-    url: https://github.com/Blockhead-Consulting/contracts
-    description: "Contracts - Private development"
-    language: Solidity
-    stars: 0
-    created: 2026-03-01
-    pushed: 2026-03-31
-    status: unreviewed
-  - name: agent-defi
-    org: Blockhead-Consulting
-    url: https://github.com/Blockhead-Consulting/agent-defi
-    description: "Agent DeFi - Private development"
-    language: Go
-    stars: 0
-    created: 2026-03-01
-    pushed: 2026-03-31
-    status: unreviewed
-  - name: agent-inference
-    org: Blockhead-Consulting
-    url: https://github.com/Blockhead-Consulting/agent-inference
-    description: "Agent Inference - Private development"
-    language: Go
-    stars: 0
-    created: 2026-03-01
-    pushed: 2026-03-31
+    fork: false
+    owner_commits: null
     status: unreviewed
   - name: guild-framework
     org: Blockhead-Consulting
@@ -492,6 +609,8 @@ repos:
     stars: 0
     created: 2025-05-25
     pushed: 2025-06-02
+    fork: false
+    owner_commits: null
     status: unreviewed
   - name: SwapBlocks-Tools-and-Articles
     org: SwapBlocks
@@ -501,6 +620,8 @@ repos:
     stars: 1
     created: 2018-09-02
     pushed: 2019-06-26
+    fork: false
+    owner_commits: null
     status: unreviewed
   - name: Swapblocks-Repo-Demo
     org: SwapBlocks
@@ -510,6 +631,8 @@ repos:
     stars: 0
     created: 2019-05-08
     pushed: 2019-05-11
+    fork: false
+    owner_commits: null
     status: unreviewed
   - name: whitepaper
     org: SwapBlocks
@@ -519,6 +642,8 @@ repos:
     stars: 0
     created: 2019-02-18
     pushed: 2019-04-05
+    fork: false
+    owner_commits: null
     status: unreviewed
   - name: mockup
     org: SwapBlocks
@@ -528,6 +653,8 @@ repos:
     stars: 1
     created: 2019-03-20
     pushed: 2019-03-20
+    fork: false
+    owner_commits: null
     status: unreviewed
   - name: peers
     org: SwapBlocks
@@ -537,6 +664,8 @@ repos:
     stars: 0
     created: 2019-01-16
     pushed: 2019-03-10
+    fork: false
+    owner_commits: null
     status: unreviewed
   - name: paper-wallet
     org: SwapBlocks
@@ -546,6 +675,8 @@ repos:
     stars: 3
     created: 2018-07-24
     pushed: 2019-01-08
+    fork: false
+    owner_commits: null
     status: unreviewed
   - name: commander
     org: SwapBlocks
@@ -555,6 +686,8 @@ repos:
     stars: 0
     created: 2018-09-01
     pushed: 2018-09-03
+    fork: false
+    owner_commits: null
     status: unreviewed
   - name: api_docs
     org: SwapBlocks
@@ -564,6 +697,8 @@ repos:
     stars: 0
     created: 2018-09-02
     pushed: 2018-09-02
+    fork: false
+    owner_commits: null
     status: unreviewed
   - name: camp
     org: Obedience-Corp
@@ -572,7 +707,20 @@ repos:
     language: Go
     stars: 2
     created: 2026-01-16
-    pushed: 2026-04-10
+    pushed: 2026-04-11
+    fork: false
+    owner_commits: null
+    status: unreviewed
+  - name: ObedienceCorp.com
+    org: Obedience-Corp
+    url: https://github.com/Obedience-Corp/ObedienceCorp.com
+    description: "Obedience Corp Website"
+    language: CSS
+    stars: 1
+    created: 2026-01-19
+    pushed: 2026-04-11
+    fork: false
+    owner_commits: null
     status: unreviewed
   - name: camp-graph
     org: Obedience-Corp
@@ -582,6 +730,8 @@ repos:
     stars: 1
     created: 2026-02-26
     pushed: 2026-04-10
+    fork: false
+    owner_commits: null
     status: unreviewed
   - name: .github
     org: Obedience-Corp
@@ -591,15 +741,8 @@ repos:
     stars: 0
     created: 2026-01-15
     pushed: 2026-04-09
-    status: unreviewed
-  - name: ObedienceCorp.com
-    org: Obedience-Corp
-    url: https://github.com/Obedience-Corp/ObedienceCorp.com
-    description: "Obedience Corp Website"
-    language: CSS
-    stars: 1
-    created: 2026-01-19
-    pushed: 2026-04-07
+    fork: false
+    owner_commits: null
     status: unreviewed
   - name: fest
     org: Obedience-Corp
@@ -609,6 +752,8 @@ repos:
     stars: 1
     created: 2026-01-09
     pushed: 2026-04-03
+    fork: false
+    owner_commits: null
     status: unreviewed
   - name: homebrew-tap
     org: Obedience-Corp
@@ -618,6 +763,8 @@ repos:
     stars: 0
     created: 2026-02-25
     pushed: 2026-04-01
+    fork: false
+    owner_commits: null
     status: unreviewed
   - name: festival
     org: Obedience-Corp
@@ -627,6 +774,8 @@ repos:
     stars: 14
     created: 2025-09-09
     pushed: 2026-04-01
+    fork: false
+    owner_commits: null
     status: unreviewed
   - name: obey-shared
     org: Obedience-Corp
@@ -636,6 +785,8 @@ repos:
     stars: 0
     created: 2026-02-18
     pushed: 2026-03-22
+    fork: false
+    owner_commits: null
     status: unreviewed
   - name: scoop-bucket
     org: Obedience-Corp
@@ -645,4 +796,6 @@ repos:
     stars: 0
     created: 2026-02-25
     pushed: 2026-02-25
+    fork: false
+    owner_commits: null
     status: unreviewed

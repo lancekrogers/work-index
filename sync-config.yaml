@@ -8,3 +8,17 @@ owners:
   - Blockhead-Consulting
   - SwapBlocks
   - Obedience-Corp
+
+# Owners for which forks should also be pulled (maintainer-level forks).
+# By default the sync uses `--source` to exclude forks; any owner listed
+# here has that filter removed so their forks are included in repos-raw.yaml.
+# Note: forks are additionally filtered to only include those where the
+# owner has at least one commit — drive-by exploration forks get dropped.
+include_forks_from:
+  - lancekrogers
+
+# Upstream owners whose forks should always be dropped, regardless of
+# commit count. Use for bulk-excluding forks that originated from
+# bootcamp/tutorial/classroom orgs where you pushed homework solutions.
+exclude_forks_from:
+  - tiy-gvl-python
