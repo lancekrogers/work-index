@@ -1,6 +1,4 @@
-# Experiments & Research
-
-Prototypes, explorations, and learning exercises.
+# AI
 
 ---
 

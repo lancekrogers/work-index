@@ -1,0 +1,10 @@
+# sync-config.yaml
+#
+# Controls which GitHub owners (user or org) are pulled by `just sync-repos`.
+# Edit this list to add or remove owners from the raw inventory.
+
+owners:
+  - lancekrogers
+  - Blockhead-Consulting
+  - SwapBlocks
+  - Obedience-Corp

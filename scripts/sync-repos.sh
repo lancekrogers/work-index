@@ -14,11 +14,19 @@ CATALOG="projects.yaml"
 
 # --- Collect owners -----------------------------------------------------------
 
-USER=$(gh api user --jq '.login')
-ORGS=$(gh api user/orgs --jq '.[].login')
-ALL_OWNERS=$(printf '%s\n%s\n' "$USER" "$ORGS" | sort -u)
+CONFIG="sync-config.yaml"
+if [ ! -f "$CONFIG" ]; then
+    echo "ERROR: ${CONFIG} not found. Cannot determine which owners to sync." >&2
+    exit 1
+fi
 
-echo "Syncing public repos from:"
+ALL_OWNERS=$(yq -r '.owners[]' "$CONFIG")
+if [ -z "$ALL_OWNERS" ]; then
+    echo "ERROR: ${CONFIG} has no owners listed under 'owners:'." >&2
+    exit 1
+fi
+
+echo "Syncing public repos from owners in ${CONFIG}:"
 printf '%s\n' "$ALL_OWNERS" | sed 's/^/  - /'
 echo ""
 

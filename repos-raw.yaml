@@ -4,117 +4,9 @@
 # accessible GitHub orgs. Curate from this file into projects.yaml to choose
 # what appears in your catalog.
 #
-# Last synced: 2026-04-11T11:51:21Z
+# Last synced: 2026-04-11T12:05:32Z
 
 repos:
-  - name: CLT_Token
-    org: BlockchainCharlotte
-    url: https://github.com/BlockchainCharlotte/CLT_Token
-    description: "ERC20 Token worked on by Blockchain Charlotte"
-    language: unknown
-    stars: 0
-    created: 2017-11-09
-    pushed: 2017-11-09
-    in_catalog: false
-  - name: contracts
-    org: Blockhead-Consulting
-    url: https://github.com/Blockhead-Consulting/contracts
-    description: "Contracts - Private development"
-    language: Solidity
-    stars: 0
-    created: 2026-03-01
-    pushed: 2026-03-31
-    in_catalog: false
-  - name: agent-defi
-    org: Blockhead-Consulting
-    url: https://github.com/Blockhead-Consulting/agent-defi
-    description: "Agent DeFi - Private development"
-    language: Go
-    stars: 0
-    created: 2026-03-01
-    pushed: 2026-03-31
-    in_catalog: false
-  - name: agent-inference
-    org: Blockhead-Consulting
-    url: https://github.com/Blockhead-Consulting/agent-inference
-    description: "Agent Inference - Private development"
-    language: Go
-    stars: 0
-    created: 2026-03-01
-    pushed: 2026-03-31
-    in_catalog: false
-  - name: guild-framework
-    org: Blockhead-Consulting
-    url: https://github.com/Blockhead-Consulting/guild-framework
-    description: ""
-    language: unknown
-    stars: 0
-    created: 2025-05-25
-    pushed: 2025-06-02
-    in_catalog: false
-  - name: .github
-    org: Brainyard-ai
-    url: https://github.com/Brainyard-ai/.github
-    description: ""
-    language: unknown
-    stars: 0
-    created: 2025-10-20
-    pushed: 2025-10-21
-    in_catalog: false
-  - name: EOS-Getting-Started
-    org: EpicGames
-    url: https://github.com/EpicGames/EOS-Getting-Started
-    description: ""
-    language: C#
-    stars: 164
-    created: 2021-09-08
-    pushed: 2025-12-15
-    in_catalog: false
-  - name: MetaHuman-DNA-Calibration
-    org: EpicGames
-    url: https://github.com/EpicGames/MetaHuman-DNA-Calibration
-    description: ""
-    language: Mathematica
-    stars: 577
-    created: 2022-10-04
-    pushed: 2025-06-20
-    in_catalog: false
-  - name: .github
-    org: EpicGames
-    url: https://github.com/EpicGames/.github
-    description: ""
-    language: unknown
-    stars: 9
-    created: 2024-02-28
-    pushed: 2024-06-28
-    in_catalog: false
-  - name: Signup
-    org: EpicGames
-    url: https://github.com/EpicGames/Signup
-    description: "Information about signing up for a free Epic Games account, and getting access to UnrealEngine source code."
-    language: unknown
-    stars: 3596
-    created: 2015-05-14
-    pushed: 2024-06-11
-    in_catalog: false
-  - name: ThirdParty
-    org: EpicGames
-    url: https://github.com/EpicGames/ThirdParty
-    description: "Modifications to third party software used by UE4"
-    language: C
-    stars: 347
-    created: 2017-05-22
-    pushed: 2022-09-19
-    in_catalog: false
-  - name: Guild-Ventures
-    org: Guild-Ventures
-    url: https://github.com/Guild-Ventures/Guild-Ventures
-    description: ""
-    language: unknown
-    stars: 0
-    created: 2025-05-29
-    pushed: 2025-05-29
-    in_catalog: false
   - name: lancekrogers
     org: lancekrogers
     url: https://github.com/lancekrogers/lancekrogers
@@ -565,6 +457,114 @@ repos:
     created: 2015-07-05
     pushed: 2015-07-05
     in_catalog: false
+  - name: contracts
+    org: Blockhead-Consulting
+    url: https://github.com/Blockhead-Consulting/contracts
+    description: "Contracts - Private development"
+    language: Solidity
+    stars: 0
+    created: 2026-03-01
+    pushed: 2026-03-31
+    in_catalog: false
+  - name: agent-defi
+    org: Blockhead-Consulting
+    url: https://github.com/Blockhead-Consulting/agent-defi
+    description: "Agent DeFi - Private development"
+    language: Go
+    stars: 0
+    created: 2026-03-01
+    pushed: 2026-03-31
+    in_catalog: false
+  - name: agent-inference
+    org: Blockhead-Consulting
+    url: https://github.com/Blockhead-Consulting/agent-inference
+    description: "Agent Inference - Private development"
+    language: Go
+    stars: 0
+    created: 2026-03-01
+    pushed: 2026-03-31
+    in_catalog: false
+  - name: guild-framework
+    org: Blockhead-Consulting
+    url: https://github.com/Blockhead-Consulting/guild-framework
+    description: ""
+    language: unknown
+    stars: 0
+    created: 2025-05-25
+    pushed: 2025-06-02
+    in_catalog: false
+  - name: SwapBlocks-Tools-and-Articles
+    org: SwapBlocks
+    url: https://github.com/SwapBlocks/SwapBlocks-Tools-and-Articles
+    description: ""
+    language: unknown
+    stars: 1
+    created: 2018-09-02
+    pushed: 2019-06-26
+    in_catalog: false
+  - name: Swapblocks-Repo-Demo
+    org: SwapBlocks
+    url: https://github.com/SwapBlocks/Swapblocks-Repo-Demo
+    description: "Swapblocks Repo Demo"
+    language: unknown
+    stars: 0
+    created: 2019-05-08
+    pushed: 2019-05-11
+    in_catalog: false
+  - name: whitepaper
+    org: SwapBlocks
+    url: https://github.com/SwapBlocks/whitepaper
+    description: ""
+    language: TeX
+    stars: 0
+    created: 2019-02-18
+    pushed: 2019-04-05
+    in_catalog: false
+  - name: mockup
+    org: SwapBlocks
+    url: https://github.com/SwapBlocks/mockup
+    description: "Swapblocks REPO Demo, work in progress"
+    language: CSS
+    stars: 1
+    created: 2019-03-20
+    pushed: 2019-03-20
+    in_catalog: false
+  - name: peers
+    org: SwapBlocks
+    url: https://github.com/SwapBlocks/peers
+    description: "Swapblocks network peers"
+    language: unknown
+    stars: 0
+    created: 2019-01-16
+    pushed: 2019-03-10
+    in_catalog: false
+  - name: paper-wallet
+    org: SwapBlocks
+    url: https://github.com/SwapBlocks/paper-wallet
+    description: "SWAPBlocks paper-wallet"
+    language: JavaScript
+    stars: 3
+    created: 2018-07-24
+    pushed: 2019-01-08
+    in_catalog: false
+  - name: commander
+    org: SwapBlocks
+    url: https://github.com/SwapBlocks/commander
+    description: ""
+    language: Shell
+    stars: 0
+    created: 2018-09-01
+    pushed: 2018-09-03
+    in_catalog: false
+  - name: api_docs
+    org: SwapBlocks
+    url: https://github.com/SwapBlocks/api_docs
+    description: ""
+    language: unknown
+    stars: 0
+    created: 2018-09-02
+    pushed: 2018-09-02
+    in_catalog: false
   - name: camp
     org: Obedience-Corp
     url: https://github.com/Obedience-Corp/camp
@@ -645,355 +645,4 @@ repos:
     stars: 0
     created: 2026-02-25
     pushed: 2026-02-25
-    in_catalog: false
-  - name: SwapBlocks-Tools-and-Articles
-    org: SwapBlocks
-    url: https://github.com/SwapBlocks/SwapBlocks-Tools-and-Articles
-    description: ""
-    language: unknown
-    stars: 1
-    created: 2018-09-02
-    pushed: 2019-06-26
-    in_catalog: false
-  - name: Swapblocks-Repo-Demo
-    org: SwapBlocks
-    url: https://github.com/SwapBlocks/Swapblocks-Repo-Demo
-    description: "Swapblocks Repo Demo"
-    language: unknown
-    stars: 0
-    created: 2019-05-08
-    pushed: 2019-05-11
-    in_catalog: false
-  - name: whitepaper
-    org: SwapBlocks
-    url: https://github.com/SwapBlocks/whitepaper
-    description: ""
-    language: TeX
-    stars: 0
-    created: 2019-02-18
-    pushed: 2019-04-05
-    in_catalog: false
-  - name: mockup
-    org: SwapBlocks
-    url: https://github.com/SwapBlocks/mockup
-    description: "Swapblocks REPO Demo, work in progress"
-    language: CSS
-    stars: 1
-    created: 2019-03-20
-    pushed: 2019-03-20
-    in_catalog: false
-  - name: peers
-    org: SwapBlocks
-    url: https://github.com/SwapBlocks/peers
-    description: "Swapblocks network peers"
-    language: unknown
-    stars: 0
-    created: 2019-01-16
-    pushed: 2019-03-10
-    in_catalog: false
-  - name: paper-wallet
-    org: SwapBlocks
-    url: https://github.com/SwapBlocks/paper-wallet
-    description: "SWAPBlocks paper-wallet"
-    language: JavaScript
-    stars: 3
-    created: 2018-07-24
-    pushed: 2019-01-08
-    in_catalog: false
-  - name: commander
-    org: SwapBlocks
-    url: https://github.com/SwapBlocks/commander
-    description: ""
-    language: Shell
-    stars: 0
-    created: 2018-09-01
-    pushed: 2018-09-03
-    in_catalog: false
-  - name: api_docs
-    org: SwapBlocks
-    url: https://github.com/SwapBlocks/api_docs
-    description: ""
-    language: unknown
-    stars: 0
-    created: 2018-09-02
-    pushed: 2018-09-02
-    in_catalog: false
-  - name: tiy-gvl-python.github.io
-    org: tiy-gvl-python
-    url: https://github.com/tiy-gvl-python/tiy-gvl-python.github.io
-    description: "Course Website"
-    language: CSS
-    stars: 0
-    created: 2015-04-06
-    pushed: 2017-09-20
-    in_catalog: false
-  - name: palindromes
-    org: tiy-gvl-python
-    url: https://github.com/tiy-gvl-python/palindromes
-    description: "W1D2 homework"
-    language: Shell
-    stars: 0
-    created: 2015-05-27
-    pushed: 2016-12-31
-    in_catalog: false
-  - name: django-movies
-    org: tiy-gvl-python
-    url: https://github.com/tiy-gvl-python/django-movies
-    description: "W6D* Homework"
-    language: Python
-    stars: 0
-    created: 2015-06-29
-    pushed: 2016-07-10
-    in_catalog: false
-  - name: django-social
-    org: tiy-gvl-python
-    url: https://github.com/tiy-gvl-python/django-social
-    description: "W7D2 Homework"
-    language: unknown
-    stars: 0
-    created: 2015-07-07
-    pushed: 2016-07-10
-    in_catalog: false
-  - name: django-movie-api
-    org: tiy-gvl-python
-    url: https://github.com/tiy-gvl-python/django-movie-api
-    description: "W8D1 Homework"
-    language: Python
-    stars: 0
-    created: 2015-07-13
-    pushed: 2016-07-10
-    in_catalog: false
-  - name: todomvc-django
-    org: tiy-gvl-python
-    url: https://github.com/tiy-gvl-python/todomvc-django
-    description: "W8D2 Homework (group)"
-    language: JavaScript
-    stars: 0
-    created: 2015-07-14
-    pushed: 2016-07-10
-    in_catalog: false
-  - name: word-frequency
-    org: tiy-gvl-python
-    url: https://github.com/tiy-gvl-python/word-frequency
-    description: "W1D3 Homework"
-    language: Python
-    stars: 0
-    created: 2015-05-28
-    pushed: 2016-07-10
-    in_catalog: false
-  - name: charting-coin-flips
-    org: tiy-gvl-python
-    url: https://github.com/tiy-gvl-python/charting-coin-flips
-    description: "W3D2 Homework"
-    language: unknown
-    stars: 0
-    created: 2015-06-09
-    pushed: 2016-07-10
-    in_catalog: false
-  - name: spambase
-    org: tiy-gvl-python
-    url: https://github.com/tiy-gvl-python/spambase
-    description: "W5D3 Homework"
-    language: unknown
-    stars: 0
-    created: 2015-06-24
-    pushed: 2016-07-10
-    in_catalog: false
-  - name: honey-nut-clusters
-    org: tiy-gvl-python
-    url: https://github.com/tiy-gvl-python/honey-nut-clusters
-    description: "W5D4 Homework"
-    language: unknown
-    stars: 0
-    created: 2015-06-25
-    pushed: 2016-07-10
-    in_catalog: false
-  - name: linear-regression
-    org: tiy-gvl-python
-    url: https://github.com/tiy-gvl-python/linear-regression
-    description: "W5D2 Homework"
-    language: unknown
-    stars: 0
-    created: 2015-06-23
-    pushed: 2016-07-10
-    in_catalog: false
-  - name: textminer
-    org: tiy-gvl-python
-    url: https://github.com/tiy-gvl-python/textminer
-    description: "W4D2 Homework"
-    language: Python
-    stars: 0
-    created: 2015-06-16
-    pushed: 2016-07-10
-    in_catalog: false
-  - name: traffic-simulation
-    org: tiy-gvl-python
-    url: https://github.com/tiy-gvl-python/traffic-simulation
-    description: "W3D4 Homework"
-    language: unknown
-    stars: 0
-    created: 2015-06-11
-    pushed: 2016-07-10
-    in_catalog: false
-  - name: titanic
-    org: tiy-gvl-python
-    url: https://github.com/tiy-gvl-python/titanic
-    description: "W5D1 Homework"
-    language: unknown
-    stars: 0
-    created: 2015-06-22
-    pushed: 2016-07-10
-    in_catalog: false
-  - name: blackjack
-    org: tiy-gvl-python
-    url: https://github.com/tiy-gvl-python/blackjack
-    description: ""
-    language: unknown
-    stars: 0
-    created: 2015-06-02
-    pushed: 2016-07-10
-    in_catalog: false
-  - name: vectors-and-matrices
-    org: tiy-gvl-python
-    url: https://github.com/tiy-gvl-python/vectors-and-matrices
-    description: "W2D1 Homework"
-    language: Python
-    stars: 0
-    created: 2015-06-01
-    pushed: 2016-07-10
-    in_catalog: false
-  - name: atus-analysis
-    org: tiy-gvl-python
-    url: https://github.com/tiy-gvl-python/atus-analysis
-    description: "W4D3 Homework"
-    language: Shell
-    stars: 0
-    created: 2015-06-17
-    pushed: 2016-07-10
-    in_catalog: false
-  - name: utimate-pig
-    org: tiy-gvl-python
-    url: https://github.com/tiy-gvl-python/utimate-pig
-    description: "W3D3 Homework"
-    language: unknown
-    stars: 0
-    created: 2015-06-10
-    pushed: 2016-07-10
-    in_catalog: false
-  - name: random-art
-    org: tiy-gvl-python
-    url: https://github.com/tiy-gvl-python/random-art
-    description: "W3D1 Homework"
-    language: Python
-    stars: 0
-    created: 2015-06-08
-    pushed: 2016-07-10
-    in_catalog: false
-  - name: tictactoe
-    org: tiy-gvl-python
-    url: https://github.com/tiy-gvl-python/tictactoe
-    description: "W2D4 Homework"
-    language: Python
-    stars: 0
-    created: 2015-06-04
-    pushed: 2016-07-10
-    in_catalog: false
-  - name: mystery-word
-    org: tiy-gvl-python
-    url: https://github.com/tiy-gvl-python/mystery-word
-    description: "W1D3++ Homework"
-    language: unknown
-    stars: 0
-    created: 2015-05-29
-    pushed: 2016-07-10
-    in_catalog: false
-  - name: urly-bird-lite
-    org: tiy-gvl-python
-    url: https://github.com/tiy-gvl-python/urly-bird-lite
-    description: "W7D3 Homework"
-    language: unknown
-    stars: 0
-    created: 2015-07-08
-    pushed: 2016-07-10
-    in_catalog: false
-  - name: adventure-time
-    org: tiy-gvl-python
-    url: https://github.com/tiy-gvl-python/adventure-time
-    description: "W8 Weekend Homework (choose your own adventure)"
-    language: unknown
-    stars: 0
-    created: 2015-07-16
-    pushed: 2016-01-10
-    in_catalog: false
-  - name: team-z-restaurant
-    org: tiy-gvl-python
-    url: https://github.com/tiy-gvl-python/team-z-restaurant
-    description: "Repo for Team Z - Restaurant Project"
-    language: Python
-    stars: 0
-    created: 2015-07-09
-    pushed: 2015-08-31
-    in_catalog: false
-  - name: approximate-squares
-    org: tiy-gvl-python
-    url: https://github.com/tiy-gvl-python/approximate-squares
-    description: ""
-    language: Shell
-    stars: 0
-    created: 2015-05-26
-    pushed: 2015-08-21
-    in_catalog: false
-  - name: consumer-complaints
-    org: tiy-gvl-python
-    url: https://github.com/tiy-gvl-python/consumer-complaints
-    description: "W4D1 Homework"
-    language: unknown
-    stars: 0
-    created: 2015-06-15
-    pushed: 2015-08-18
-    in_catalog: false
-  - name: graphz
-    org: tiy-gvl-python
-    url: https://github.com/tiy-gvl-python/graphz
-    description: "In class hacking of graphs and javascript"
-    language: Python
-    stars: 0
-    created: 2015-07-27
-    pushed: 2015-07-27
-    in_catalog: false
-  - name: urly-bird-api
-    org: tiy-gvl-python
-    url: https://github.com/tiy-gvl-python/urly-bird-api
-    description: "W8D3 Homework (optional group)"
-    language: unknown
-    stars: 0
-    created: 2015-07-15
-    pushed: 2015-07-15
-    in_catalog: false
-  - name: class-notes
-    org: tiy-gvl-python
-    url: https://github.com/tiy-gvl-python/class-notes
-    description: "Notebooks from class"
-    language: Python
-    stars: 0
-    created: 2015-05-27
-    pushed: 2015-07-14
-    in_catalog: false
-  - name: team-a-restaurant
-    org: tiy-gvl-python
-    url: https://github.com/tiy-gvl-python/team-a-restaurant
-    description: "Repo for Team A - Restaurant Project"
-    language: CSS
-    stars: 0
-    created: 2015-07-09
-    pushed: 2015-07-13
-    in_catalog: false
-  - name: splatter
-    org: tiy-gvl-python
-    url: https://github.com/tiy-gvl-python/splatter
-    description: "Django Project"
-    language: JavaScript
-    stars: 0
-    created: 2015-06-29
-    pushed: 2015-07-06
     in_catalog: false

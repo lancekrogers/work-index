@@ -1,6 +1,6 @@
-# Experiments & Research
+# Developer Tools
 
-Prototypes, explorations, and learning exercises.
+CLIs, developer productivity tools, workflow automation, and build systems.
 
 ---
 
