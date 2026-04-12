@@ -6,10 +6,10 @@ Prototypes, explorations, and learning exercises.
 
 ## Projects
 
-| Project                       | Status | Stack | Summary |
-| ----------------------------- | ------ | ----- | ------- |
-| _Populate from projects.yaml_ |        |       |         |
+| Project | Stack | Stars | Created | Summary |
+|---------|-------|------:|---------|---------|
+| *No projects yet* | | | | |
 
 ---
 
-_[Back to catalog](../README.md)_
+*0 projects in this category. [Back to catalog](../README.md).*

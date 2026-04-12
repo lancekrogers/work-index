@@ -1,21 +1,287 @@
-# curation.yaml
+# curation.yaml — single source of truth for editorial decisions.
 #
-# Persistent curation decisions. Repos listed here keep their state across
-# every `just sync-repos` run. This is where YOU make editorial calls about
-# what to do with repos discovered in repos-raw.yaml.
+# Three sections:
+#   excluded:  repos that should never appear in the catalog
+#   todo:      repos that need a decision
+#   catalog:   repos to display, with category + optional prose
 #
-# Identifiers use the `org/name` format (same as GitHub).
+# Catalog entries:
+#   org/name:
+#     category: <slug>              # required
+#     summary: "..."                # optional — falls back to GitHub description
+#     why_it_matters: "..."         # optional — for flagships
+#     status: active|maintained|... # optional
 #
-# State priority (computed at sync time, written to repos-raw.yaml as `status`):
-#   1. included    — the repo has a full entry in projects.yaml
-#   2. excluded    — listed below in `excluded:` (never shows in `just uncurated`)
-#   3. todo        — listed below in `todo:` (shortlist for curation)
-#   4. unreviewed  — default; hasn't been triaged yet
-#
-# Helper recipes:
-#   just exclude <org/name>    — append to excluded list
-#   just mark-todo <org/name>  — append to todo list
-#   just unmark <org/name>     — remove from both lists (back to unreviewed)
+# Commands:
+#   workindex add <org/name> <category> [summary]
+#   workindex exclude <org/name>
+#   workindex sync        (pull GitHub + render)
+#   workindex generate    (render only)
 
-excluded: []
-todo: []
+excluded:
+  # Profile / dotfiles
+  - lancekrogers/lancekrogers
+  - lancekrogers/nvim-config
+  - lancekrogers/LunarVimConfig
+  - lancekrogers/Public-Gist
+  # Scaffolds / throwaway
+  - lancekrogers/guild-scaffold
+  - lancekrogers/script-to-grab-claude-code-docs-from-anthropic
+  - lancekrogers/json_ical
+  # Personal site / meta
+  - lancekrogers/lancekrogers.com
+  - lancekrogers/ai-project-portfolio
+  # Archived startup mirror
+  - lancekrogers/Swapblocks
+  # Distribution infrastructure
+  - lancekrogers/homebrew-tap
+  - Obedience-Corp/homebrew-tap
+  - Obedience-Corp/scoop-bucket
+  # Org profiles / marketing
+  - Obedience-Corp/.github
+  - Obedience-Corp/ObedienceCorp.com
+  # Take-home interviews
+  - lancekrogers/ME-take-home-project
+  - lancekrogers/CryptoExchangeCodingChallenge
+  # Old experiments / one-offs
+  - lancekrogers/iota_seed_generator
+  - lancekrogers/EtherMining
+  - lancekrogers/passthrough-finder
+  - lancekrogers/DataPipelineBI
+  # Old bootcamp tutorials
+  - lancekrogers/androidWeatherAppTreehouse
+  - lancekrogers/Android-Tutorial-2
+  - lancekrogers/FunFactsTreehouseAndriod
+  - lancekrogers/andriodExample
+  - lancekrogers/Django_practice
+  - lancekrogers/Useful_programs
+  - lancekrogers/skills-assesment
+  - lancekrogers/Udacity-ML-Boston-Housing-Project
+  # SwapBlocks legacy junk
+  - SwapBlocks/SwapBlocks-Tools-and-Articles
+  - SwapBlocks/Swapblocks-Repo-Demo
+  - SwapBlocks/mockup
+  - SwapBlocks/peers
+  - SwapBlocks/commander
+  - SwapBlocks/api_docs
+
+todo:
+  - lancekrogers/guild-core
+  - lancekrogers/agent-prediction
+  - lancekrogers/festival_ebook_planning
+  - Blockhead-Consulting/guild-framework
+  - SwapBlocks/whitepaper
+
+catalog:
+
+  # ── Festival Campaigns ──────────────────────────────────────────────
+
+  lancekrogers/Obey-Agent-Economy:
+    category: festival-campaigns
+    summary: >
+      ETHDenver 2026 multi-chain AI agent economy — 5 autonomous agents
+      across Hedera, 0G, and Base orchestrated by the obey daemon.
+    why_it_matters: >
+      Flagship demonstration of Festival methodology applied to multi-chain
+      agent coordination with 90+ verified on-chain transactions.
+
+  lancekrogers/claude-kitchen-campaign:
+    category: festival-campaigns
+    summary: >
+      Active campaign workspace demonstrating Festival methodology with
+      agents, workflows, and structured planning.
+
+  # ── AI ──────────────────────────────────────────────────────────────
+
+  lancekrogers/claude-code-go:
+    category: ai
+    summary: >
+      First Go SDK for Anthropic Claude Code CLI — streaming, session
+      management, MCP integration, subagents, and production features.
+    why_it_matters: >
+      40 stars. Released before official Anthropic SDKs existed. Most
+      prominent open-source Go tool for Claude Code automation.
+
+  lancekrogers/agent-coordinator:
+    category: ai
+    summary: >
+      Go orchestrator dispatching tasks to AI agents via Hedera HCS
+      with HTS payment settlement and festival methodology integration.
+
+  lancekrogers/agent-inference:
+    category: ai
+    summary: >
+      Go inference agent routing tasks to 0G decentralized compute
+      providers with ERC-7857 iNFT provenance and DA audit trails.
+
+  lancekrogers/algo-scales:
+    category: ai
+    summary: >
+      Terminal-first algorithm practice tool with Claude Code and
+      Ollama AI tutoring, vim integration, and progress tracking.
+
+  # ── Blockchain & Fintech ────────────────────────────────────────────
+
+  lancekrogers/agent-defi:
+    category: blockchain-fintech
+    summary: >
+      Autonomous Go DeFi agent on Base with ERC-4626 vault, Uniswap V3
+      trading, ERC-8004 identity, x402 payments, and CRE risk evaluation.
+
+  lancekrogers/contracts:
+    category: blockchain-fintech
+    summary: >
+      Solidity contracts for the Obey Agent Economy — AgentSettlement,
+      ReputationDecay, and ERC-7857 iNFT. 34-test Foundry suite.
+
+  lancekrogers/cre-risk-router:
+    category: blockchain-fintech
+    summary: >
+      On-chain risk decision layer using Chainlink CRE — 8 sequential
+      risk gates with DON-signed immutable decision receipts.
+
+  SwapBlocks/paper-wallet:
+    category: blockchain-fintech
+    summary: Client-side SBX paper wallet generator.
+
+  # ── Backend & Infrastructure ────────────────────────────────────────
+
+  lancekrogers/dashboard:
+    category: backend-infra
+    summary: >
+      Next.js real-time observer dashboard for the Obey Agent Economy.
+      5 live panels with WebSocket, gRPC, and Hedera Mirror Node adapters.
+
+  lancekrogers/clipsync:
+    category: backend-infra
+    summary: >
+      Secure cross-device clipboard sync in Rust with AES-256-GCM
+      encryption, SSH key auth, and peer-to-peer communication.
+
+  lancekrogers/django_trx_dashboard:
+    category: backend-infra
+    summary: >
+      Django multi-chain crypto wallet investigation dashboard with
+      HTMX, SSE real-time updates, and JWT-authenticated API.
+
+  lancekrogers/ens-proposal-emailer:
+    category: backend-infra
+    summary: >
+      Go microservice monitoring ENS governance proposals via Tally API
+      with email notification and BoltDB persistence.
+
+  Obedience-Corp/obey-shared:
+    category: backend-infra
+    summary: >
+      Shared Go packages for Obedience Corp products — build orchestration,
+      campaign utilities, contract lifecycle, markdown rendering.
+
+  # ── Developer Tools ─────────────────────────────────────────────────
+
+  lancekrogers/yt_summarizer:
+    category: devtools
+    summary: >
+      Python CLI for YouTube video context extraction and summarization
+      with multi-model tokenizer support and cost estimation.
+
+  lancekrogers/tcount:
+    category: devtools
+    summary: >
+      Fast offline CLI token counter for OpenAI, Claude, Llama, and
+      generic models with cost estimation and JSON output.
+
+  lancekrogers/gomod-rename:
+    category: devtools
+    summary: >
+      Go CLI that renames module import paths across an entire codebase
+      in one command. Stdlib-only, dry-run by default.
+
+  lancekrogers/tree2scaffold:
+    category: devtools
+    summary: >
+      CLI tool for rapid project scaffolding from ASCII tree output.
+      Language-aware file generation with dry-run and overwrite protection.
+    why_it_matters: Core workflow tool (t2s) used daily for LLM-driven development.
+
+  lancekrogers/hiero-plugin:
+    category: devtools
+    summary: >
+      Hiero CLI plugin for camp workspace management with 5 scaffold
+      templates for Hedera and 0G development patterns.
+
+  lancekrogers/lotr-golang-sdk:
+    category: devtools
+    summary: >
+      Go SDK for the Lord of the Rings API with filtering, examples,
+      and comprehensive test coverage.
+
+  lancekrogers/lazysql:
+    category: devtools
+    summary: >
+      Cross-platform TUI database management tool in Go. Maintainer-level
+      fork with 29 commits adding features and improvements.
+
+  Obedience-Corp/camp:
+    category: devtools
+    summary: >
+      Multi-project AI workspace manager with git submodule/worktree
+      integration, shell navigation, and campaign-level operations.
+    why_it_matters: Core product of the Festival methodology suite.
+
+  Obedience-Corp/camp-graph:
+    category: devtools
+    summary: >
+      Knowledge graph visualization plugin for camp — maps campaign
+      artifacts and code structure as queryable node graphs.
+
+  Obedience-Corp/fest:
+    category: devtools
+    summary: >
+      Festival Methodology CLI with 40+ commands for hierarchical
+      planning and execution of complex AI projects.
+    why_it_matters: Core product of the Festival methodology suite alongside camp.
+
+  Obedience-Corp/festival:
+    category: devtools
+    summary: >
+      Official Festival distribution and methodology hub. 14 stars.
+      Complete documentation with Claude Code plugin integration.
+    why_it_matters: >
+      Highest-starred Obedience Corp product. The public face of the
+      Festival methodology.
+
+  # ── Vim & Neovim Plugins ────────────────────────────────────────────
+
+  lancekrogers/nvim-token-counter:
+    category: vim-plugins
+    summary: >
+      Neovim lualine plugin for real-time LLM token counting across
+      Claude, GPT, Llama, DeepSeek, and Qwen models.
+
+  lancekrogers/mermaider.nvim:
+    category: vim-plugins
+    summary: >
+      Neovim plugin for inline Mermaid diagram rendering with
+      auto-render, caching, and multiple display modes.
+
+  lancekrogers/algo-scales-vim:
+    category: vim-plugins
+    summary: >
+      Vim plugin companion to AlgoScales with language-aware setup
+      and integrated AI tutoring workflow.
+
+  lancekrogers/vim-log-highlighting:
+    category: vim-plugins
+    summary: >
+      Fork with added features for generic log file syntax highlighting
+      in Vim and Neovim.
+
+  lancekrogers/vim-colorstepper:
+    category: vim-plugins
+    summary: >
+      Fork with improvements to easily cycle through Vim color schemes.
+
+  lancekrogers/kanban.nvim:
+    category: vim-plugins
+    summary: >
+      Neovim kanban board plugin with custom modifications.
