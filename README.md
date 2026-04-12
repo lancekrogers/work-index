@@ -39,7 +39,7 @@ GitHub only lets you pin 6 repos. This catalog is the rest of the story.
 ## By the Numbers
 
 - **32** cataloged projects
-- Primary stacks: Go, TypeScript, Vim Script, Lua, Python
+- Primary stacks: Go, TypeScript, Lua, Vim Script, Python
 
 ---
 

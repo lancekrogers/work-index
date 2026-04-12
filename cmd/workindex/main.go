@@ -14,9 +14,9 @@ import (
 )
 
 const (
-	syncConfigPath = "sync-config.yaml"
-	curationPath   = "curation.yaml"
-	rawPath        = "repos-raw.yaml"
+	syncConfigPath = "config/sync-config.yaml"
+	curationPath   = "config/curation.yaml"
+	rawPath        = "config/repos-raw.yaml"
 	categoriesDir  = "categories"
 	readmePath     = "README.md"
 )
