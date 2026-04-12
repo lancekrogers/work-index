@@ -28,6 +28,7 @@ type Project struct {
 	Summary      string `yaml:"summary,omitempty"`
 	WhyItMatters string `yaml:"why_it_matters,omitempty"`
 	Status       string `yaml:"status,omitempty"`
+	Priority     int    `yaml:"priority,omitempty"`
 }
 
 // ID returns org/name.
@@ -88,12 +89,16 @@ func MergeProjects(repos []github.Repo, cur *config.Curation) []Project {
 		if entry.WhyItMatters != "" {
 			p.WhyItMatters = entry.WhyItMatters
 		}
+		p.Priority = entry.Priority
 
 		projects = append(projects, p)
 	}
 
-	// Sort by created date descending (newest first).
+	// Sort by priority descending, then created date descending.
 	sort.Slice(projects, func(i, j int) bool {
+		if projects[i].Priority != projects[j].Priority {
+			return projects[i].Priority > projects[j].Priority
+		}
 		return projects[i].Created > projects[j].Created
 	})
 

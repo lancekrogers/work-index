@@ -14,6 +14,7 @@ type CatalogEntry struct {
 	Summary      string `yaml:"summary,omitempty"`
 	WhyItMatters string `yaml:"why_it_matters,omitempty"`
 	Status       string `yaml:"status,omitempty"` // active, maintained, complete, archived, experiment
+	Priority     int    `yaml:"priority,omitempty"` // higher = appears first within category. 0 = default (sort by date).
 }
 
 // Curation represents the full curation.yaml file.
