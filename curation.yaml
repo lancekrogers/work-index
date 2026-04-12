@@ -222,27 +222,27 @@ catalog:
       fork with 29 commits adding features and improvements.
 
   Obedience-Corp/camp:
-    category: devtools
+    category: ai
     summary: >
       Multi-project AI workspace manager with git submodule/worktree
       integration, shell navigation, and campaign-level operations.
     why_it_matters: Core product of the Festival methodology suite.
 
   Obedience-Corp/camp-graph:
-    category: devtools
+    category: ai
     summary: >
       Knowledge graph visualization plugin for camp — maps campaign
       artifacts and code structure as queryable node graphs.
 
   Obedience-Corp/fest:
-    category: devtools
+    category: ai
     summary: >
       Festival Methodology CLI with 40+ commands for hierarchical
       planning and execution of complex AI projects.
     why_it_matters: Core product of the Festival methodology suite alongside camp.
 
   Obedience-Corp/festival:
-    category: devtools
+    category: ai
     summary: >
       Official Festival distribution and methodology hub. 14 stars.
       Complete documentation with Claude Code plugin integration.
