@@ -12,6 +12,7 @@ CLIs, developer productivity tools, workflow automation, and build systems.
 | [hiero-plugin](https://github.com/lancekrogers/hiero-plugin) | TypeScript | 2026-02-18 | Hiero CLI plugin for camp workspace management with 5 scaffold templates for Hedera and 0G development patterns. |
 | [tcount](https://github.com/lancekrogers/tcount) | Go | 2026-01-28 | Fast offline CLI token counter for OpenAI, Claude, Llama, and generic models with cost estimation and JSON output. |
 | [camp](https://github.com/Obedience-Corp/camp) | Go | 2026-01-16 | Multi-project AI workspace manager with git submodule/worktree integration, shell navigation, and campaign-level oper... |
+| [guild-scaffold](https://github.com/lancekrogers/guild-scaffold) | Go | 2026-01-15 | Template-agnostic project scaffolding tool with variable substitution, registry system, and dry-run mode for reusable... |
 | [fest](https://github.com/Obedience-Corp/fest) | Go | 2026-01-09 | Festival Methodology CLI with 40+ commands for hierarchical planning and execution of complex AI projects. |
 | [lazysql](https://github.com/lancekrogers/lazysql) | Go | 2025-12-28 | Cross-platform TUI database management tool in Go. Maintainer-level fork with 29 commits adding features and improvem... |
 | [gomod-rename](https://github.com/lancekrogers/gomod-rename) | Go | 2025-12-09 | Go CLI that renames module import paths across an entire codebase in one command. Stdlib-only, dry-run by default. |
@@ -23,4 +24,4 @@ CLIs, developer productivity tools, workflow automation, and build systems.
 
 ---
 
-*12 projects in this category. [Back to catalog](../README.md).*
+*13 projects in this category. [Back to catalog](../README.md).*

@@ -17,6 +17,7 @@ AI/LLM tools, agent frameworks, inference infrastructure, and prompt engineering
 | [Obey-Agent-Economy](https://github.com/lancekrogers/Obey-Agent-Economy) | TypeScript | 2026-02-16 | ETHDenver 2026 multi-chain AI agent economy — 5 autonomous agents across Hedera, 0G, and Base orchestrated by the o... |
 | [tcount](https://github.com/lancekrogers/tcount) | Go | 2026-01-28 | Fast offline CLI token counter for OpenAI, Claude, Llama, and generic models with cost estimation and JSON output. |
 | [camp](https://github.com/Obedience-Corp/camp) | Go | 2026-01-16 | Multi-project AI workspace manager with git submodule/worktree integration, shell navigation, and campaign-level oper... |
+| [guild-scaffold](https://github.com/lancekrogers/guild-scaffold) | Go | 2026-01-15 | Template-agnostic project scaffolding tool with variable substitution, registry system, and dry-run mode for reusable... |
 | [nvim-token-counter](https://github.com/lancekrogers/nvim-token-counter) | Lua | 2026-01-13 | Neovim lualine plugin for real-time LLM token counting across Claude, GPT, Llama, DeepSeek, and Qwen models. |
 | [fest](https://github.com/Obedience-Corp/fest) | Go | 2026-01-09 | Festival Methodology CLI with 40+ commands for hierarchical planning and execution of complex AI projects. |
 | [festival](https://github.com/Obedience-Corp/festival) | Shell | 2025-09-09 | Official Festival distribution and methodology hub. 14 stars. Complete documentation with Claude Code plugin integrat... |
@@ -29,4 +30,4 @@ AI/LLM tools, agent frameworks, inference infrastructure, and prompt engineering
 
 ---
 
-*18 projects in this category. [Back to catalog](../README.md).*
+*19 projects in this category. [Back to catalog](../README.md).*

@@ -24,8 +24,7 @@ excluded:
   - lancekrogers/nvim-config
   - lancekrogers/LunarVimConfig
   - lancekrogers/Public-Gist
-  # Scaffolds / throwaway
-  - lancekrogers/guild-scaffold
+  # Throwaway scripts
   - lancekrogers/script-to-grab-claude-code-docs-from-anthropic
   - lancekrogers/json_ical
   # Personal site / meta
@@ -94,6 +93,12 @@ catalog:
     category: ai
     summary: >
       Collaborative AI agent framework in Go for structured project execution.
+
+  lancekrogers/guild-scaffold:
+    categories: [ai, devtools]
+    summary: >
+      Template-agnostic project scaffolding tool with variable substitution,
+      registry system, and dry-run mode for reusable project templates.
 
   lancekrogers/claude-code-go:
     category: ai

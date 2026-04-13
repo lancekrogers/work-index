@@ -9,9 +9,9 @@ Smart contracts, DeFi protocols, fintech platforms, and web3 tooling.
 | Project | Stack | Created | Summary |
 |---------|-------|---------|---------|
 | [cre-risk-router](https://github.com/lancekrogers/cre-risk-router) | Go | 2026-03-02 | On-chain risk decision layer using Chainlink CRE — 8 sequential risk gates with DON-signed immutable decision recei... |
+| [agent-coordinator](https://github.com/lancekrogers/agent-coordinator) | Go | 2026-02-18 | Go orchestrator dispatching tasks to AI agents via Hedera HCS with HTS payment settlement and festival methodology in... |
 | [contracts](https://github.com/lancekrogers/contracts) | Solidity | 2026-02-18 | Solidity contracts for the Obey Agent Economy — AgentSettlement, ReputationDecay, and ERC-7857 iNFT. 34-test Foundr... |
 | [dashboard](https://github.com/lancekrogers/dashboard) | TypeScript | 2026-02-18 | Next.js real-time observer dashboard for the Obey Agent Economy. 5 live panels with WebSocket, gRPC, and Hedera Mirro... |
-| [agent-coordinator](https://github.com/lancekrogers/agent-coordinator) | Go | 2026-02-18 | Go orchestrator dispatching tasks to AI agents via Hedera HCS with HTS payment settlement and festival methodology in... |
 | [agent-inference](https://github.com/lancekrogers/agent-inference) | Go | 2026-02-18 | Go inference agent routing tasks to 0G decentralized compute providers with ERC-7857 iNFT provenance and DA audit tra... |
 | [hiero-plugin](https://github.com/lancekrogers/hiero-plugin) | TypeScript | 2026-02-18 | Hiero CLI plugin for camp workspace management with 5 scaffold templates for Hedera and 0G development patterns. |
 | [agent-defi](https://github.com/lancekrogers/agent-defi) | Go | 2026-02-18 | Autonomous Go DeFi agent on Base with ERC-4626 vault, Uniswap V3 trading, ERC-8004 identity, x402 payments, and CRE r... |
