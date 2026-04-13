@@ -10,9 +10,10 @@ Smart contracts, DeFi protocols, fintech platforms, and web3 tooling.
 - Built OTC crypto trading platform that processed $20M+ in trades
 - Django backend with KYC verification, trade execution, and compliance workflows
 
-**Shrapnel / Galachain** (2025) — Blockchain Engineer
-- Built the Galachain microservice for a AAA FPS game including custodial wallet service and all on-chain game actions
-- Created local Hyperledger Fabric tooling to accelerate testing — delivered full production service months ahead of schedule
+**Shrapnel** (2025) — Blockchain Engineer
+- Built Galachain microservice for a AAA FPS game including custodial wallet service and all on-chain game actions
+- Reverse-engineered Galachain and created local Hyperledger Fabric dev tooling to accelerate microservice testing
+- Sole developer of the blockchain service; delivered full production service months ahead of schedule
 
 **Mythical Games** (2022-2023) — Software Engineer, Blockchain
 - Developed Go microservices handling 15M+ on-chain transactions/month with 100% finality on Mythos Chain
@@ -31,9 +32,12 @@ Smart contracts, DeFi protocols, fintech platforms, and web3 tooling.
 
 ### Fintech (Non-Crypto)
 
-**Bank of America, Global Security** (2024) — Senior Software Engineer
+**Bank of America, Global Security** (2024) — Senior Software Engineer (Contract)
 - Refactored legacy security scanning software and built CI/CD pipeline for 15-year-old codebase
 - Reduced deploy times from months to hours; reclaimed ~6 months/year of developer time through automation
+
+**Bank of America, Treasury** (2017-2018) — Contract Engineer
+- Automated data quality checks and spreadsheet workflows
 
 **PNC Bank** — Contract Engineer
 - Audited Python data pipelines for accuracy and security compliance
