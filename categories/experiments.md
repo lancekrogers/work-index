@@ -6,9 +6,9 @@ Prototypes, explorations, and learning exercises.
 
 ## Projects
 
-| Project | Stack | Stars | Created | Summary |
-|---------|-------|------:|---------|---------|
-| *No projects yet* | | | | |
+| Project | Stack | Created | Summary |
+|---------|-------|---------|---------|
+| *No projects yet* | | | |
 
 ---
 

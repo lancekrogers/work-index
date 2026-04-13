@@ -6,23 +6,6 @@ GitHub only lets you pin 6 repos. This catalog is the rest of the story.
 
 ---
 
-## Selected Work
-
-| Project | What it is | Stack |
-|---------|-----------|-------|
-| [claude-code-go](https://github.com/lancekrogers/claude-code-go) | First Go SDK for Anthropic Claude Code CLI — streaming, session management,... | Go |
-| [festival](https://github.com/Obedience-Corp/festival) | Official Festival distribution and methodology hub. 14 stars. Complete docume... | Shell |
-| [nvim-token-counter](https://github.com/lancekrogers/nvim-token-counter) | Neovim lualine plugin for real-time LLM token counting across Claude, GPT, Ll... | Lua |
-| [paper-wallet](https://github.com/SwapBlocks/paper-wallet) | Client-side SBX paper wallet generator. | JavaScript |
-| [Obey-Agent-Economy](https://github.com/lancekrogers/Obey-Agent-Economy) | ETHDenver 2026 multi-chain AI agent economy — 5 autonomous agents across He... | TypeScript |
-| [algo-scales](https://github.com/lancekrogers/algo-scales) | Terminal-first algorithm practice tool with Claude Code and Ollama AI tutorin... | Go |
-| [camp](https://github.com/Obedience-Corp/camp) | Multi-project AI workspace manager with git submodule/worktree integration, s... | Go |
-| [tcount](https://github.com/lancekrogers/tcount) | Fast offline CLI token counter for OpenAI, Claude, Llama, and generic models ... | Go |
-
-> These are representative, not exhaustive. Browse by category below for the full picture.
-
----
-
 ## Browse by Category
 
 | Category | Projects | Description |
@@ -39,7 +22,7 @@ GitHub only lets you pin 6 repos. This catalog is the rest of the story.
 ## By the Numbers
 
 - **32** cataloged projects
-- Primary stacks: Go, TypeScript, Lua, Vim Script, Python
+- Primary stacks: Go, Lua, Vim Script, TypeScript, Python
 
 ---
 

@@ -27,13 +27,13 @@ const categoryTmpl = `# {{ .Title }}
 
 ## Projects
 
-| Project | Stack | Stars | Created | Summary |
-|---------|-------|------:|---------|---------|
+| Project | Stack | Created | Summary |
+|---------|-------|---------|---------|
 {{- range .Projects }}
-| [{{ .Name }}]({{ .URL }}) | {{ .Language }} | {{ .Stars }} | {{ .Created }} | {{ displaySummary . }} |
+| [{{ .Name }}]({{ .URL }}) | {{ .Language }} | {{ .Created }} | {{ displaySummary . }} |
 {{- end }}
 {{- if not .Projects }}
-| *No projects yet* | | | | |
+| *No projects yet* | | | |
 {{- end }}
 
 ---
@@ -94,8 +94,8 @@ func RenderREADME(path string, projects []Project) error {
 	sb.WriteString("GitHub only lets you pin 6 repos. This catalog is the rest of the story.\n\n")
 	sb.WriteString("---\n\n")
 
-	// Selected work: top projects by stars.
-	flagships := topByStars(projects, 8)
+	// Selected work: top projects by priority (set in curation.yaml).
+	flagships := topByPriority(projects, 8)
 	if len(flagships) > 0 {
 		sb.WriteString("## Selected Work\n\n")
 		sb.WriteString("| Project | What it is | Stack |\n")
@@ -146,20 +146,19 @@ func RenderREADME(path string, projects []Project) error {
 	return os.WriteFile(path, []byte(sb.String()), 0644)
 }
 
-func topByStars(projects []Project, n int) []Project {
-	sorted := make([]Project, len(projects))
-	copy(sorted, projects)
-	for i := 0; i < len(sorted); i++ {
-		for j := i + 1; j < len(sorted); j++ {
-			if sorted[j].Stars > sorted[i].Stars {
-				sorted[i], sorted[j] = sorted[j], sorted[i]
-			}
+func topByPriority(projects []Project, n int) []Project {
+	// Filter to only projects that have an explicit priority > 0.
+	var prioritized []Project
+	for _, p := range projects {
+		if p.Priority > 0 {
+			prioritized = append(prioritized, p)
 		}
 	}
-	if len(sorted) > n {
-		sorted = sorted[:n]
+	// Already sorted by priority desc (from MergeProjects), just cap at n.
+	if len(prioritized) > n {
+		prioritized = prioritized[:n]
 	}
-	return sorted
+	return prioritized
 }
 
 func topN(m map[string]int, n int) []string {
