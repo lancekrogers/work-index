@@ -66,7 +66,6 @@ excluded:
   - SwapBlocks/api_docs
 
 todo:
-  - lancekrogers/guild-core
   - lancekrogers/agent-prediction
   - lancekrogers/festival_ebook_planning
   - Blockhead-Consulting/guild-framework
@@ -77,7 +76,7 @@ catalog:
   # ── Festival Campaigns ──────────────────────────────────────────────
 
   lancekrogers/Obey-Agent-Economy:
-    category: festival-campaigns
+    categories: [festival-campaigns, ai, blockchain-fintech]
     summary: >
       ETHDenver 2026 multi-chain AI agent economy — 5 autonomous agents
       across Hedera, 0G, and Base orchestrated by the obey daemon.
@@ -91,7 +90,10 @@ catalog:
       Active campaign workspace demonstrating Festival methodology with
       agents, workflows, and structured planning.
 
-  # ── AI ──────────────────────────────────────────────────────────────
+  lancekrogers/guild-core:
+    category: ai
+    summary: >
+      Collaborative AI agent framework in Go for structured project execution.
 
   lancekrogers/claude-code-go:
     category: ai
@@ -103,27 +105,25 @@ catalog:
       prominent open-source Go tool for Claude Code automation.
 
   lancekrogers/agent-coordinator:
-    category: ai
+    categories: [ai, blockchain-fintech]
     summary: >
       Go orchestrator dispatching tasks to AI agents via Hedera HCS
       with HTS payment settlement and festival methodology integration.
 
   lancekrogers/agent-inference:
-    category: ai
+    categories: [ai, blockchain-fintech]
     summary: >
       Go inference agent routing tasks to 0G decentralized compute
       providers with ERC-7857 iNFT provenance and DA audit trails.
 
   lancekrogers/algo-scales:
-    category: ai
+    categories: [ai, devtools]
     summary: >
       Terminal-first algorithm practice tool with Claude Code and
       Ollama AI tutoring, vim integration, and progress tracking.
 
-  # ── Blockchain & Fintech ────────────────────────────────────────────
-
   lancekrogers/agent-defi:
-    category: blockchain-fintech
+    categories: [blockchain-fintech, ai]
     summary: >
       Autonomous Go DeFi agent on Base with ERC-4626 vault, Uniswap V3
       trading, ERC-8004 identity, x402 payments, and CRE risk evaluation.
@@ -135,7 +135,7 @@ catalog:
       ReputationDecay, and ERC-7857 iNFT. 34-test Foundry suite.
 
   lancekrogers/cre-risk-router:
-    category: blockchain-fintech
+    categories: [blockchain-fintech, ai]
     summary: >
       On-chain risk decision layer using Chainlink CRE — 8 sequential
       risk gates with DON-signed immutable decision receipts.
@@ -144,10 +144,8 @@ catalog:
     category: blockchain-fintech
     summary: Client-side SBX paper wallet generator.
 
-  # ── Backend & Infrastructure ────────────────────────────────────────
-
   lancekrogers/dashboard:
-    category: backend-infra
+    categories: [backend-infra, blockchain-fintech]
     summary: >
       Next.js real-time observer dashboard for the Obey Agent Economy.
       5 live panels with WebSocket, gRPC, and Hedera Mirror Node adapters.
@@ -159,33 +157,31 @@ catalog:
       encryption, SSH key auth, and peer-to-peer communication.
 
   lancekrogers/django_trx_dashboard:
-    category: backend-infra
+    categories: [backend-infra, blockchain-fintech]
     summary: >
       Django multi-chain crypto wallet investigation dashboard with
       HTMX, SSE real-time updates, and JWT-authenticated API.
 
   lancekrogers/ens-proposal-emailer:
-    category: backend-infra
+    categories: [backend-infra, blockchain-fintech]
     summary: >
       Go microservice monitoring ENS governance proposals via Tally API
       with email notification and BoltDB persistence.
 
   Obedience-Corp/obey-shared:
-    category: backend-infra
+    categories: [backend-infra, ai]
     summary: >
       Shared Go packages for Obedience Corp products — build orchestration,
       campaign utilities, contract lifecycle, markdown rendering.
 
-  # ── Developer Tools ─────────────────────────────────────────────────
-
   lancekrogers/yt_summarizer:
-    category: devtools
+    categories: [devtools, ai]
     summary: >
       Python CLI for YouTube video context extraction and summarization
       with multi-model tokenizer support and cost estimation.
 
   lancekrogers/tcount:
-    category: devtools
+    categories: [devtools, ai]
     summary: >
       Fast offline CLI token counter for OpenAI, Claude, Llama, and
       generic models with cost estimation and JSON output.
@@ -197,14 +193,14 @@ catalog:
       in one command. Stdlib-only, dry-run by default.
 
   lancekrogers/tree2scaffold:
-    category: devtools
+    categories: [devtools, ai]
     summary: >
       CLI tool for rapid project scaffolding from ASCII tree output.
       Language-aware file generation with dry-run and overwrite protection.
     why_it_matters: Core workflow tool (t2s) used daily for LLM-driven development.
 
   lancekrogers/hiero-plugin:
-    category: devtools
+    categories: [devtools, blockchain-fintech]
     summary: >
       Hiero CLI plugin for camp workspace management with 5 scaffold
       templates for Hedera and 0G development patterns.
@@ -222,27 +218,27 @@ catalog:
       fork with 29 commits adding features and improvements.
 
   Obedience-Corp/camp:
-    category: ai
+    categories: [ai, devtools]
     summary: >
       Multi-project AI workspace manager with git submodule/worktree
       integration, shell navigation, and campaign-level operations.
     why_it_matters: Core product of the Festival methodology suite.
 
   Obedience-Corp/camp-graph:
-    category: ai
+    categories: [ai, devtools]
     summary: >
       Knowledge graph visualization plugin for camp — maps campaign
       artifacts and code structure as queryable node graphs.
 
   Obedience-Corp/fest:
-    category: ai
+    categories: [ai, devtools]
     summary: >
       Festival Methodology CLI with 40+ commands for hierarchical
       planning and execution of complex AI projects.
     why_it_matters: Core product of the Festival methodology suite alongside camp.
 
   Obedience-Corp/festival:
-    category: ai
+    categories: [ai, devtools]
     summary: >
       Official Festival distribution and methodology hub. 14 stars.
       Complete documentation with Claude Code plugin integration.
@@ -250,10 +246,8 @@ catalog:
       Highest-starred Obedience Corp product. The public face of the
       Festival methodology.
 
-  # ── Vim & Neovim Plugins ────────────────────────────────────────────
-
   lancekrogers/nvim-token-counter:
-    category: vim-plugins
+    categories: [vim-plugins, ai]
     summary: >
       Neovim lualine plugin for real-time LLM token counting across
       Claude, GPT, Llama, DeepSeek, and Qwen models.
@@ -265,7 +259,7 @@ catalog:
       auto-render, caching, and multiple display modes.
 
   lancekrogers/algo-scales-vim:
-    category: vim-plugins
+    categories: [vim-plugins, ai]
     summary: >
       Vim plugin companion to AlgoScales with language-aware setup
       and integrated AI tutoring workflow.

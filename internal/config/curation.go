@@ -10,11 +10,24 @@ import (
 
 // CatalogEntry is the per-project editorial metadata in curation.yaml.
 type CatalogEntry struct {
-	Category     string `yaml:"category"`
-	Summary      string `yaml:"summary,omitempty"`
-	WhyItMatters string `yaml:"why_it_matters,omitempty"`
-	Status       string `yaml:"status,omitempty"` // active, maintained, complete, archived, experiment
-	Priority     int    `yaml:"priority,omitempty"` // higher = appears first within category. 0 = default (sort by date).
+	Category     string   `yaml:"category,omitempty"`     // shorthand for single category
+	Categories   []string `yaml:"categories,omitempty"`   // multiple categories
+	Summary      string   `yaml:"summary,omitempty"`
+	WhyItMatters string   `yaml:"why_it_matters,omitempty"`
+	Status       string   `yaml:"status,omitempty"`   // active, maintained, complete, archived, experiment
+	Priority     int      `yaml:"priority,omitempty"` // higher = appears first within category. 0 = default (sort by date).
+}
+
+// ResolvedCategories returns the effective category list.
+// If Categories is set, it wins. Otherwise falls back to Category as a single-element list.
+func (e *CatalogEntry) ResolvedCategories() []string {
+	if len(e.Categories) > 0 {
+		return e.Categories
+	}
+	if e.Category != "" {
+		return []string{e.Category}
+	}
+	return nil
 }
 
 // Curation represents the full curation.yaml file.

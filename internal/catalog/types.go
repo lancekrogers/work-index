@@ -24,11 +24,11 @@ type Project struct {
 	OwnerCommits *int   `yaml:"owner_commits,omitempty"`
 
 	// Editorial (from curation.yaml catalog).
-	Category     string `yaml:"category"`
-	Summary      string `yaml:"summary,omitempty"`
-	WhyItMatters string `yaml:"why_it_matters,omitempty"`
-	Status       string `yaml:"status,omitempty"`
-	Priority     int    `yaml:"priority,omitempty"`
+	Categories   []string `yaml:"categories"`
+	Summary      string   `yaml:"summary,omitempty"`
+	WhyItMatters string   `yaml:"why_it_matters,omitempty"`
+	Status       string   `yaml:"status,omitempty"`
+	Priority     int      `yaml:"priority,omitempty"`
 }
 
 // ID returns org/name.
@@ -79,7 +79,7 @@ func MergeProjects(repos []github.Repo, cur *config.Curation) []Project {
 			Pushed:       r.Pushed,
 			Fork:         r.IsFork,
 			OwnerCommits: r.OwnerCommits,
-			Category:     entry.Category,
+			Categories:   entry.ResolvedCategories(),
 			Status:       entry.Status,
 		}
 
@@ -109,7 +109,9 @@ func MergeProjects(repos []github.Repo, cur *config.Curation) []Project {
 func GroupByCategory(projects []Project, categories map[string]CategoryMeta) []Category {
 	groups := make(map[string][]Project)
 	for _, p := range projects {
-		groups[p.Category] = append(groups[p.Category], p)
+		for _, cat := range p.Categories {
+			groups[cat] = append(groups[cat], p)
+		}
 	}
 
 	var result []Category
