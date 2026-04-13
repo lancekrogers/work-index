@@ -10,9 +10,9 @@ GitHub only lets you pin 6 repos. This catalog is the rest of the story.
 
 | Category | Projects | Description |
 |----------|----------|-------------|
-| [AI](categories/ai.md) | 19 | AI/LLM tools, agent frameworks, inference infrastructure, and prompt engineering. |
+| [AI](categories/ai.md) | 20 | AI/LLM tools, agent frameworks, inference infrastructure, and prompt engineering. |
 | [Backend & Infrastructure](categories/backend-infra.md) | 5 | APIs, microservices, databases, cloud infrastructure, and the systems that hold everything together. |
-| [Blockchain & Fintech](categories/blockchain-fintech.md) | 11 | Smart contracts, DeFi protocols, fintech platforms, and web3 tooling. |
+| [Blockchain & Fintech](categories/blockchain-fintech.md) | 13 | Smart contracts, DeFi protocols, fintech platforms, and web3 tooling. |
 | [Developer Tools](categories/devtools.md) | 13 | CLIs, developer productivity tools, workflow automation, and build systems. |
 | [Festival Campaigns](categories/festival-campaigns.md) | 2 | Public examples of the Festival methodology in action — real campaigns built with camp and fest. |
 | [Vim & Neovim Plugins](categories/vim-plugins.md) | 6 | Editor plugins for Vim and Neovim. |
@@ -21,8 +21,8 @@ GitHub only lets you pin 6 repos. This catalog is the rest of the story.
 
 ## By the Numbers
 
-- **34** cataloged projects
-- Primary stacks: Go, Vim Script, TypeScript, Lua, Python
+- **36** cataloged projects
+- Primary stacks: Go, TypeScript, Lua, Python, Vim Script
 
 ---
 

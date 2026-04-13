@@ -43,7 +43,6 @@ excluded:
   - lancekrogers/ME-take-home-project
   - lancekrogers/CryptoExchangeCodingChallenge
   # Old experiments / one-offs
-  - lancekrogers/iota_seed_generator
   - lancekrogers/EtherMining
   - lancekrogers/passthrough-finder
   - lancekrogers/DataPipelineBI
@@ -65,7 +64,6 @@ excluded:
   - SwapBlocks/api_docs
 
 todo:
-  - lancekrogers/agent-prediction
   - lancekrogers/festival_ebook_planning
   - Blockhead-Consulting/guild-framework
   - SwapBlocks/whitepaper
@@ -139,6 +137,12 @@ catalog:
       Solidity contracts for the Obey Agent Economy — AgentSettlement,
       ReputationDecay, and ERC-7857 iNFT. 34-test Foundry suite.
 
+  lancekrogers/agent-prediction:
+    categories: [blockchain-fintech, ai]
+    summary: >
+      Prediction market agent for Drift BET, Polymarket, and Limitless —
+      part of the Obey Agent Economy.
+
   lancekrogers/cre-risk-router:
     categories: [blockchain-fintech, ai]
     summary: >
@@ -148,6 +152,12 @@ catalog:
   SwapBlocks/paper-wallet:
     category: blockchain-fintech
     summary: Client-side SBX paper wallet generator.
+
+  lancekrogers/iota_seed_generator:
+    category: blockchain-fintech
+    summary: >
+      Random seed generator for IOTA cryptocurrency using Python
+      cryptographic primitives.
 
   lancekrogers/dashboard:
     categories: [backend-infra, blockchain-fintech]
