@@ -49,6 +49,7 @@ type Category struct {
 	Slug     string
 	Title    string
 	Desc     string
+	Content  string // optional hand-written content from categories/<slug>.content.md
 	Projects []Project
 }
 

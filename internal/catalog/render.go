@@ -22,7 +22,9 @@ var DefaultCategories = map[string]CategoryMeta{
 const categoryTmpl = `# {{ .Title }}
 
 {{ .Desc }}
-
+{{ if .Content }}
+{{ .Content }}
+{{ end }}
 ---
 
 ## Projects
@@ -65,16 +67,23 @@ func RenderCategories(categoriesDir string, projects []Project) error {
 		return fmt.Errorf("parse category template: %w", err)
 	}
 
-	for _, cat := range cats {
-		path := filepath.Join(categoriesDir, cat.Slug+".md")
+	for i := range cats {
+		// Load optional hand-written content from <slug>.content.md.
+		// This file is never overwritten by the generator.
+		contentPath := filepath.Join(categoriesDir, cats[i].Slug+".content.md")
+		if data, err := os.ReadFile(contentPath); err == nil {
+			cats[i].Content = strings.TrimSpace(string(data))
+		}
+
+		path := filepath.Join(categoriesDir, cats[i].Slug+".md")
 		f, err := os.Create(path)
 		if err != nil {
 			return fmt.Errorf("create %s: %w", path, err)
 		}
 
-		if err := tmpl.Execute(f, cat); err != nil {
+		if err := tmpl.Execute(f, cats[i]); err != nil {
 			f.Close()
-			return fmt.Errorf("render %s: %w", cat.Slug, err)
+			return fmt.Errorf("render %s: %w", cats[i].Slug, err)
 		}
 		f.Close()
 	}
