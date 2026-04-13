@@ -21,7 +21,9 @@ CLIs, developer productivity tools, workflow automation, and build systems.
 | [algo-scales](https://github.com/lancekrogers/algo-scales) | Go | 2025-05-10 | Terminal-first algorithm practice tool with Claude Code and Ollama AI tutoring, vim integration, and progress tracking. |
 | [tree2scaffold](https://github.com/lancekrogers/tree2scaffold) | Go | 2025-04-29 | CLI tool for rapid project scaffolding from ASCII tree output. Language-aware file generation with dry-run and overwr... |
 | [lotr-golang-sdk](https://github.com/lancekrogers/lotr-golang-sdk) | Go | 2023-10-27 | Go SDK for the Lord of the Rings API with filtering, examples, and comprehensive test coverage. |
+| [zipdownloader](https://github.com/lancekrogers/zipdownloader) | Python | 2015-08-28 | Python file download utility. |
+| [blog-package](https://github.com/lancekrogers/blog-package) | CSS | 2015-08-24 | Portfolio and blog package. |
 
 ---
 
-*13 projects in this category. [Back to catalog](../README.md).*
+*15 projects in this category. [Back to catalog](../README.md).*

@@ -22,9 +22,7 @@ var DefaultCategories = map[string]CategoryMeta{
 const categoryTmpl = `# {{ .Title }}
 
 {{ .Desc }}
-{{ if .Content }}
-{{ .Content }}
-{{ end }}
+
 ---
 
 ## Projects
@@ -39,7 +37,12 @@ const categoryTmpl = `# {{ .Title }}
 {{- end }}
 
 ---
+{{ if .Content }}
 
+{{ .Content }}
+
+---
+{{ end }}
 *{{ len .Projects }} projects in this category. [Back to catalog](../README.md).*
 `
 
@@ -97,9 +100,10 @@ func RenderREADME(path string, projects []Project) error {
 
 	var sb strings.Builder
 	sb.WriteString("# Lance Rogers — Project Catalog\n\n")
-	sb.WriteString("I build software at the intersection of AI, infrastructure, and developer tooling. ")
-	sb.WriteString("Over the past year I've shipped 100+ projects across agent frameworks, backend systems, ")
-	sb.WriteString("blockchain protocols, and developer tools — most of them finished, all of them real.\n\n")
+	sb.WriteString("I've been building software professionally for over a decade — fintech, blockchain, ")
+	sb.WriteString("security, backend infrastructure, and developer tooling since 2015. AI didn't make me a builder. ")
+	sb.WriteString("It made me a faster one. Over the past year I've shipped 100+ projects across agent frameworks, ")
+	sb.WriteString("multi-chain systems, and production tooling.\n\n")
 	sb.WriteString("GitHub only lets you pin 6 repos. This catalog is the rest of the story.\n\n")
 	sb.WriteString("---\n\n")
 

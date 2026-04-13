@@ -73,7 +73,6 @@ func FetchRepos(owner string, cfg *config.SyncConfig) (repos []Repo, skippedFork
 	args := []string{"repo", "list", owner,
 		"--limit", "1000",
 		"--visibility", "public",
-		"--no-archived",
 		"--json", "name,visibility,description,url,primaryLanguage,pushedAt,createdAt,stargazerCount,isArchived,isFork,parent",
 	}
 	if sourceFlag != "" {
