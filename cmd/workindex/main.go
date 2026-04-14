@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"os"
+	"os/exec"
 	"sort"
 	"strings"
 	"time"
@@ -286,7 +287,9 @@ func cmdUncurated() error {
 	return nil
 }
 
-// cmdProfile generates a GitHub profile README that links into the catalog.
+// cmdProfile generates a GitHub profile README, writes it to the personal-readme
+// repo, and pushes the change. The personal-readme repo must be a sibling project
+// at ../personal-readme/ (added via `camp project add`).
 func cmdProfile() error {
 	cur, err := config.LoadCuration(curationPath)
 	if err != nil {
@@ -305,19 +308,50 @@ func cmdProfile() error {
 
 	projects := catalog.MergeProjects(raw.Repos, cur)
 
-	output := "profile-README.md"
 	repoURL := "https://github.com/lancekrogers/work-index"
 	tagline := "Building Cognitive Infrastructure for Ambitious Work"
 
+	// Resolve the personal-readme repo path relative to work-index.
+	profileRepoPath := "../personal-readme/README.md"
 	if len(os.Args) > 2 {
-		output = os.Args[2]
+		profileRepoPath = os.Args[2]
 	}
 
-	if err := catalog.RenderProfile(output, repoURL, tagline, projects); err != nil {
+	if err := catalog.RenderProfile(profileRepoPath, repoURL, tagline, projects); err != nil {
 		return err
 	}
 
-	fmt.Printf("Generated %s (%d projects across categories).\n", output, len(projects))
+	fmt.Printf("Generated profile README (%d projects across categories).\n", len(projects))
+
+	// Commit and push to the personal-readme repo.
+	profileDir := "../personal-readme"
+	if len(os.Args) > 3 {
+		profileDir = os.Args[3]
+	}
+
+	gitAdd := exec.Command("git", "-C", profileDir, "add", "README.md")
+	if out, err := gitAdd.CombinedOutput(); err != nil {
+		return fmt.Errorf("git add: %s: %w", out, err)
+	}
+
+	// Check if there are changes to commit.
+	gitDiff := exec.Command("git", "-C", profileDir, "diff", "--cached", "--quiet")
+	if err := gitDiff.Run(); err == nil {
+		fmt.Println("Profile README unchanged — nothing to push.")
+		return nil
+	}
+
+	gitCommit := exec.Command("git", "-C", profileDir, "commit", "-m", "Sync profile README from work-index catalog")
+	if out, err := gitCommit.CombinedOutput(); err != nil {
+		return fmt.Errorf("git commit: %s: %w", out, err)
+	}
+
+	gitPush := exec.Command("git", "-C", profileDir, "push")
+	if out, err := gitPush.CombinedOutput(); err != nil {
+		return fmt.Errorf("git push: %s: %w", out, err)
+	}
+
+	fmt.Println("Pushed profile README to personal-readme repo.")
 	return nil
 }
 

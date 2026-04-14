@@ -9,9 +9,10 @@
 build:
     go build -o workindex ./cmd/workindex
 
-# Pull repos from GitHub + render category pages
+# Pull repos from GitHub + render category pages + sync profile README
 sync: build
     ./workindex sync
+    ./workindex profile
 
 # Render category pages from current data (no GitHub fetch)
 generate: build

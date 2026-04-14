@@ -21,7 +21,7 @@ Go and Python. 10+ years building backend systems, developer tooling, blockchain
 
 **Primary:** Go · Python
 
-**Also:** JavaScript · TypeScript · Lua · Vim Script · Solidity · Jupyter Notebook · Rust · Shell · CSS
+**Also:** JavaScript · Vim Script · TypeScript · Lua · Jupyter Notebook · Solidity · Rust · CSS
 
 ---
 
