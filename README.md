@@ -2,11 +2,9 @@
 
 Senior infrastructure engineer and technical founder. Go and Python. 10+ years building backend systems, developer tooling, blockchain infrastructure, and AI execution platforms.
 
-46 projects organized by domain, spanning 2015–present.
-
 ---
 
-## By Domain
+## Curated Projects
 
 | Category | Projects |
 |----------|----------|
@@ -16,6 +14,7 @@ Senior infrastructure engineer and technical founder. Go and Python. 10+ years b
 | [Developer Tools](categories/devtools.md) | 15 |
 | [Festival Campaigns](categories/festival-campaigns.md) | 2 |
 | [Vim & Neovim Plugins](categories/vim-plugins.md) | 6 |
+| **Total** | **46** |
 
 ---
 
@@ -23,7 +22,7 @@ Senior infrastructure engineer and technical founder. Go and Python. 10+ years b
 
 **Primary:** Go · Python
 
-**Also:** JavaScript · Vim Script · TypeScript · Lua · Solidity · Jupyter Notebook · CSS · Shell · Rust
+**Also:** JavaScript · TypeScript · Lua · Vim Script · Jupyter Notebook · Solidity · Rust · Shell · CSS
 
 ---
 
