@@ -1,6 +1,6 @@
 # Lance Rogers
 
-Senior infrastructure engineer and technical founder. Go and Python. 10+ years building backend systems, developer tooling, blockchain infrastructure, and AI execution platforms.
+Go and Python. 10+ years building backend systems, developer tooling, blockchain infrastructure, and AI execution platforms.
 
 ---
 
@@ -22,7 +22,7 @@ Senior infrastructure engineer and technical founder. Go and Python. 10+ years b
 
 **Primary:** Go · Python
 
-**Also:** JavaScript · TypeScript · Lua · Vim Script · Jupyter Notebook · Solidity · Rust · Shell · CSS
+**Also:** JavaScript · Lua · Vim Script · TypeScript · Jupyter Notebook · Solidity · CSS · Shell · Rust
 
 ---
 
