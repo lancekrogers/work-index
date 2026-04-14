@@ -168,6 +168,61 @@ func RenderREADME(path string, projects []Project) error {
 	return os.WriteFile(path, []byte(sb.String()), 0644)
 }
 
+// RenderProfile generates a GitHub profile README with full URLs pointing to
+// the work-index repo. Designed for the lancekrogers/lancekrogers repo.
+func RenderProfile(path, repoURL, tagline string, projects []Project) error {
+	cats := GroupByCategory(projects, DefaultCategories)
+
+	var sb strings.Builder
+
+	// Tagline as header.
+	if tagline != "" {
+		fmt.Fprintf(&sb, "## %s\n\n", tagline)
+	}
+
+	sb.WriteString("Go and Python. 10+ years building backend systems, developer tooling, ")
+	sb.WriteString("blockchain infrastructure, and AI execution platforms.\n\n")
+	sb.WriteString("---\n\n")
+
+	// Category table with full URLs to work-index repo.
+	sb.WriteString("### Curated Projects\n\n")
+	sb.WriteString("| Category | Projects |\n")
+	sb.WriteString("|----------|----------|\n")
+	for _, cat := range cats {
+		if len(cat.Projects) == 0 {
+			continue
+		}
+		catURL := fmt.Sprintf("%s/blob/main/categories/%s.md", repoURL, cat.Slug)
+		fmt.Fprintf(&sb, "| [%s](%s) | %d |\n", cat.Title, catURL, len(cat.Projects))
+	}
+	sb.WriteString("\n---\n\n")
+
+	// Stacks.
+	langCounts := make(map[string]int)
+	for _, p := range projects {
+		if p.Language != "" && p.Language != "unknown" {
+			langCounts[p.Language]++
+		}
+	}
+	sb.WriteString("### Stacks\n\n")
+	sb.WriteString("**Primary:** Go · Python\n\n")
+	others := topN(langCounts, 12)
+	var additional []string
+	for _, l := range others {
+		if l != "Go" && l != "Python" {
+			additional = append(additional, l)
+		}
+	}
+	if len(additional) > 0 {
+		fmt.Fprintf(&sb, "**Also:** %s\n", strings.Join(additional, " · "))
+	}
+
+	sb.WriteString("\n---\n\n")
+	fmt.Fprintf(&sb, "*[Full project catalog →](%s)*\n", repoURL)
+
+	return os.WriteFile(path, []byte(sb.String()), 0644)
+}
+
 func topByPriority(projects []Project, n int) []Project {
 	// Filter to only projects that have an explicit priority > 0.
 	var prioritized []Project

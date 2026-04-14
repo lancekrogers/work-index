@@ -32,3 +32,7 @@ status: build
 # List unreviewed repos
 uncurated: build
     ./workindex uncurated
+
+# Generate GitHub profile README with links to catalog
+profile: build
+    ./workindex profile

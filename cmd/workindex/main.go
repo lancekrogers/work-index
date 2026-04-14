@@ -41,6 +41,8 @@ func main() {
 		err = cmdStatus()
 	case "uncurated":
 		err = cmdUncurated()
+	case "profile":
+		err = cmdProfile()
 	default:
 		usage()
 		os.Exit(1)
@@ -61,7 +63,8 @@ Commands:
   add <id> <cat> [summary]   Add a project to the catalog
   exclude <id>   Exclude a repo from the catalog
   status         Show sync status and counts
-  uncurated      List unreviewed repos`)
+  uncurated      List unreviewed repos
+  profile        Generate GitHub profile README with links to catalog`)
 }
 
 // cmdSync pulls repos from GitHub, writes repos-raw.yaml, and renders categories.
@@ -280,6 +283,41 @@ func cmdUncurated() error {
 		}
 	}
 	fmt.Printf("\n%d unreviewed repos.\n", count)
+	return nil
+}
+
+// cmdProfile generates a GitHub profile README that links into the catalog.
+func cmdProfile() error {
+	cur, err := config.LoadCuration(curationPath)
+	if err != nil {
+		return err
+	}
+
+	data, err := os.ReadFile(rawPath)
+	if err != nil {
+		return fmt.Errorf("read %s: %w (run 'workindex sync' first)", rawPath, err)
+	}
+
+	var raw catalog.RawFile
+	if err := parseYAML(data, &raw); err != nil {
+		return err
+	}
+
+	projects := catalog.MergeProjects(raw.Repos, cur)
+
+	output := "profile-README.md"
+	repoURL := "https://github.com/lancekrogers/work-index"
+	tagline := "Building Cognitive Infrastructure for Ambitious Work"
+
+	if len(os.Args) > 2 {
+		output = os.Args[2]
+	}
+
+	if err := catalog.RenderProfile(output, repoURL, tagline, projects); err != nil {
+		return err
+	}
+
+	fmt.Printf("Generated %s (%d projects across categories).\n", output, len(projects))
 	return nil
 }
 
