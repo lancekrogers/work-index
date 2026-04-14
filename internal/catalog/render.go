@@ -144,7 +144,6 @@ func RenderREADME(path string, projects []Project) error {
 		}
 		fmt.Fprintf(&sb, "| [%s](categories/%s.md) | %d |\n", cat.Title, cat.Slug, len(cat.Projects))
 	}
-	fmt.Fprintf(&sb, "| **Total** | **%d** |\n", len(projects))
 	sb.WriteString("\n---\n\n")
 
 	// Stacks breakdown — primary expertise first, then others from catalog data.

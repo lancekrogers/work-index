@@ -14,7 +14,6 @@ Go and Python. 10+ years building backend systems, developer tooling, blockchain
 | [Developer Tools](categories/devtools.md) | 15 |
 | [Festival Campaigns](categories/festival-campaigns.md) | 2 |
 | [Vim & Neovim Plugins](categories/vim-plugins.md) | 6 |
-| **Total** | **46** |
 
 ---
 
@@ -22,7 +21,7 @@ Go and Python. 10+ years building backend systems, developer tooling, blockchain
 
 **Primary:** Go · Python
 
-**Also:** JavaScript · Lua · Vim Script · TypeScript · Jupyter Notebook · Solidity · CSS · Shell · Rust
+**Also:** JavaScript · TypeScript · Lua · Vim Script · Solidity · Jupyter Notebook · Rust · Shell · CSS
 
 ---
 
