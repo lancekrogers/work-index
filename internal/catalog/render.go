@@ -116,11 +116,6 @@ func RenderREADME(path string, projects []Project) error {
 		}
 	}
 
-	fmt.Fprintf(&sb, "%d projects organized by domain", len(projects))
-	if len(oldest) >= 4 {
-		fmt.Fprintf(&sb, ", spanning %s–present", oldest[:4])
-	}
-	sb.WriteString(".\n\n")
 	sb.WriteString("---\n\n")
 
 	// Selected work: top projects by priority (set in curation.yaml).
@@ -140,8 +135,8 @@ func RenderREADME(path string, projects []Project) error {
 		sb.WriteString("\n---\n\n")
 	}
 
-	// Category navigation.
-	sb.WriteString("## By Domain\n\n")
+	// Category navigation with total.
+	sb.WriteString("## Curated Projects\n\n")
 	sb.WriteString("| Category | Projects |\n")
 	sb.WriteString("|----------|----------|\n")
 	for _, cat := range cats {
@@ -150,6 +145,7 @@ func RenderREADME(path string, projects []Project) error {
 		}
 		fmt.Fprintf(&sb, "| [%s](categories/%s.md) | %d |\n", cat.Title, cat.Slug, len(cat.Projects))
 	}
+	fmt.Fprintf(&sb, "| **Total** | **%d** |\n", len(projects))
 	sb.WriteString("\n---\n\n")
 
 	// Stacks breakdown — primary expertise first, then others from catalog data.
