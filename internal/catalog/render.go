@@ -100,9 +100,8 @@ func RenderREADME(path string, projects []Project) error {
 
 	var sb strings.Builder
 	sb.WriteString("# Lance Rogers\n\n")
-	sb.WriteString("Senior infrastructure engineer and technical founder. Go and Python. ")
-	sb.WriteString("10+ years building backend systems, developer tooling, blockchain infrastructure, ")
-	sb.WriteString("and AI execution platforms.\n\n")
+	sb.WriteString("Go and Python. 10+ years building backend systems, developer tooling, ")
+	sb.WriteString("blockchain infrastructure, and AI execution platforms.\n\n")
 
 	// Compute stats.
 	langCounts := make(map[string]int)
