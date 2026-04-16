@@ -1,12 +1,16 @@
 package catalog
 
 import (
+	_ "embed"
 	"fmt"
 	"os"
 	"path/filepath"
 	"strings"
 	"text/template"
 )
+
+//go:embed templates/profile.md.tmpl
+var profileTmpl string
 
 // DefaultCategories returns the canonical category metadata.
 var DefaultCategories = map[string]CategoryMeta{
@@ -140,36 +144,47 @@ func RenderREADME(path string, projects []Project) error {
 	return os.WriteFile(path, []byte(sb.String()), 0644)
 }
 
+// profileData is the view model for templates/profile.md.tmpl.
+type profileData struct {
+	RepoURL    string
+	Categories []profileCategory
+}
+
+type profileCategory struct {
+	Title string
+	URL   string
+	Count int
+}
+
 // RenderProfile generates a GitHub profile README with full URLs pointing to
 // the work-index repo. Designed for the lancekrogers/lancekrogers repo.
-func RenderProfile(path, repoURL, tagline string, projects []Project) error {
+// The markdown body lives in templates/profile.md.tmpl — edit there.
+func RenderProfile(path, repoURL string, projects []Project) error {
 	cats := GroupByCategory(projects, DefaultCategories)
 
-	var sb strings.Builder
-
-	// Tagline as header.
-	if tagline != "" {
-		fmt.Fprintf(&sb, "## %s\n\n", tagline)
+	data := profileData{
+		RepoURL: repoURL,
 	}
-
-	sb.WriteString("Go and Python. 10+ years building backend systems, developer tooling, ")
-	sb.WriteString("blockchain infrastructure, and AI execution platforms.\n\n")
-	sb.WriteString("---\n\n")
-
-	// Category table with full URLs to work-index repo.
-	sb.WriteString("### Curated Projects\n\n")
-	sb.WriteString("| Category | Projects |\n")
-	sb.WriteString("|----------|----------|\n")
 	for _, cat := range cats {
 		if len(cat.Projects) == 0 {
 			continue
 		}
-		catURL := fmt.Sprintf("%s/blob/main/categories/%s.md", repoURL, cat.Slug)
-		fmt.Fprintf(&sb, "| [%s](%s) | %d |\n", cat.Title, catURL, len(cat.Projects))
+		data.Categories = append(data.Categories, profileCategory{
+			Title: cat.Title,
+			URL:   fmt.Sprintf("%s/blob/main/categories/%s.md", repoURL, cat.Slug),
+			Count: len(cat.Projects),
+		})
 	}
-	sb.WriteString("\n---\n\n")
 
-	fmt.Fprintf(&sb, "*[Full project catalog →](%s)*\n", repoURL)
+	tmpl, err := template.New("profile").Parse(profileTmpl)
+	if err != nil {
+		return fmt.Errorf("parse profile template: %w", err)
+	}
+
+	var sb strings.Builder
+	if err := tmpl.Execute(&sb, data); err != nil {
+		return fmt.Errorf("render profile: %w", err)
+	}
 
 	return os.WriteFile(path, []byte(sb.String()), 0644)
 }

@@ -309,7 +309,6 @@ func cmdProfile() error {
 	projects := catalog.MergeProjects(raw.Repos, cur)
 
 	repoURL := "https://github.com/lancekrogers/work-index"
-	tagline := "Building Cognitive Infrastructure for Ambitious Work"
 
 	// Resolve the personal-readme repo path relative to work-index.
 	profileRepoPath := "../personal-readme/README.md"
@@ -317,7 +316,7 @@ func cmdProfile() error {
 		profileRepoPath = os.Args[2]
 	}
 
-	if err := catalog.RenderProfile(profileRepoPath, repoURL, tagline, projects); err != nil {
+	if err := catalog.RenderProfile(profileRepoPath, repoURL, projects); err != nil {
 		return err
 	}
 
