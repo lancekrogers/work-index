@@ -11,10 +11,10 @@ AI/LLM tools, agent frameworks, inference infrastructure, and prompt engineering
 | [agent-prediction](https://github.com/lancekrogers/agent-prediction) | Go | 2026-03-14 | Prediction market agent for Drift BET, Polymarket, and Limitless — part of the Obey Agent Economy. |
 | [cre-risk-router](https://github.com/lancekrogers/cre-risk-router) | Go | 2026-03-02 | On-chain risk decision layer using Chainlink CRE — 8 sequential risk gates with DON-signed immutable decision recei... |
 | [camp-graph](https://github.com/Obedience-Corp/camp-graph) | Go | 2026-02-26 | Knowledge graph visualization plugin for camp — maps campaign artifacts and code structure as queryable node graphs. |
-| [agent-inference](https://github.com/lancekrogers/agent-inference) | Go | 2026-02-18 | Go inference agent routing tasks to 0G decentralized compute providers with ERC-7857 iNFT provenance and DA audit tra... |
-| [agent-coordinator](https://github.com/lancekrogers/agent-coordinator) | Go | 2026-02-18 | Go orchestrator dispatching tasks to AI agents via Hedera HCS with HTS payment settlement and festival methodology in... |
-| [obey-shared](https://github.com/Obedience-Corp/obey-shared) | Go | 2026-02-18 | Shared Go packages for Obedience Corp products — build orchestration, campaign utilities, contract lifecycle, markd... |
 | [agent-defi](https://github.com/lancekrogers/agent-defi) | Go | 2026-02-18 | Autonomous Go DeFi agent on Base with ERC-4626 vault, Uniswap V3 trading, ERC-8004 identity, x402 payments, and CRE r... |
+| [agent-inference](https://github.com/lancekrogers/agent-inference) | Go | 2026-02-18 | Go inference agent routing tasks to 0G decentralized compute providers with ERC-7857 iNFT provenance and DA audit tra... |
+| [obey-shared](https://github.com/Obedience-Corp/obey-shared) | Go | 2026-02-18 | Shared Go packages for Obedience Corp products — build orchestration, campaign utilities, contract lifecycle, markd... |
+| [agent-coordinator](https://github.com/lancekrogers/agent-coordinator) | Go | 2026-02-18 | Go orchestrator dispatching tasks to AI agents via Hedera HCS with HTS payment settlement and festival methodology in... |
 | [Obey-Agent-Economy](https://github.com/lancekrogers/Obey-Agent-Economy) | TypeScript | 2026-02-16 | ETHDenver 2026 multi-chain AI agent economy — 5 autonomous agents across Hedera, 0G, and Base orchestrated by the o... |
 | [tcount](https://github.com/lancekrogers/tcount) | Go | 2026-01-28 | Fast offline CLI token counter for OpenAI, Claude, Llama, and generic models with cost estimation and JSON output. |
 | [camp](https://github.com/Obedience-Corp/camp) | Go | 2026-01-16 | Multi-project AI workspace manager with git submodule/worktree integration, shell navigation, and campaign-level oper... |
