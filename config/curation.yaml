@@ -187,6 +187,9 @@ catalog:
         category: devtools
         summary: |
             Go CLI that renames module import paths across an entire codebase in one command. Stdlib-only, dry-run by default.
+    lancekrogers/grok-go-sdk:
+        category: ai
+        summary: Go SDK wrapping the grok CLI for embedding Grok agents in Go applications. MIT.
     lancekrogers/guild-core:
         category: ai
         summary: |
