@@ -238,6 +238,9 @@ catalog:
             - ai
         summary: |
             Neovim lualine plugin for real-time LLM token counting across Claude, GPT, Llama, DeepSeek, and Qwen models.
+    lancekrogers/samantha-cli:
+        category: ai
+        summary: Python CLI giving Claude a voice — maintainer-level fork (13 commits) wrapping the Claude CLI with speech recognition and Fish Audio TTS for hands-free terminal conversations, inspired by Her.
     lancekrogers/tcount:
         categories:
             - devtools
