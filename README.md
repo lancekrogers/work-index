@@ -8,7 +8,7 @@ Go and Python. 10+ years building backend systems, developer tooling, blockchain
 
 | Category | Projects |
 |----------|----------|
-| [AI](categories/ai.md) | 22 |
+| [AI](categories/ai.md) | 21 |
 | [Backend & Infrastructure](categories/backend-infra.md) | 7 |
 | [Blockchain & Fintech](categories/blockchain-fintech.md) | 18 |
 | [Developer Tools](categories/devtools.md) | 15 |
