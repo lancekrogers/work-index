@@ -10,7 +10,7 @@ Go and Python. 10+ years building backend systems, developer tooling, blockchain
 |----------|----------|
 | [AI](categories/ai.md) | 22 |
 | [Backend & Infrastructure](categories/backend-infra.md) | 7 |
-| [Blockchain & Fintech](categories/blockchain-fintech.md) | 19 |
+| [Blockchain & Fintech](categories/blockchain-fintech.md) | 18 |
 | [Developer Tools](categories/devtools.md) | 15 |
 | [Festival Campaigns](categories/festival-campaigns.md) | 2 |
 | [Vim & Neovim Plugins](categories/vim-plugins.md) | 6 |
