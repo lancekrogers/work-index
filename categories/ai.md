@@ -10,7 +10,6 @@ AI/LLM tools, agent frameworks, inference infrastructure, and prompt engineering
 |---------|-------|---------|---------|
 | [grok-go-sdk](https://github.com/lancekrogers/grok-go-sdk) | Go | 2026-05-15 | Go SDK wrapping the grok CLI for embedding Grok agents in Go applications. MIT. |
 | [samantha-cli](https://github.com/lancekrogers/samantha-cli) | Python | 2026-03-16 | Python CLI giving Claude a voice — maintainer-level fork (13 commits) wrapping the Claude CLI with speech recogniti... |
-| [agent-prediction](https://github.com/lancekrogers/agent-prediction) | Go | 2026-03-14 | Prediction market agent for Drift BET, Polymarket, and Limitless — part of the Obey Agent Economy. |
 | [cre-risk-router](https://github.com/lancekrogers/cre-risk-router) | Go | 2026-03-02 | On-chain risk decision layer using Chainlink CRE — 8 sequential risk gates with DON-signed immutable decision recei... |
 | [camp-graph](https://github.com/Obedience-Corp/camp-graph) | Go | 2026-02-26 | Knowledge graph visualization plugin for camp — maps campaign artifacts and code structure as queryable node graphs. |
 | [agent-defi](https://github.com/lancekrogers/agent-defi) | Go | 2026-02-18 | Autonomous Go DeFi agent on Base with ERC-4626 vault, Uniswap V3 trading, ERC-8004 identity, x402 payments, and CRE r... |
