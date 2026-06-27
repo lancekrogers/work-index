@@ -8,7 +8,6 @@ Smart contracts, DeFi protocols, fintech platforms, and web3 tooling.
 
 | Project | Stack | Created | Summary |
 |---------|-------|---------|---------|
-| [agent-prediction](https://github.com/lancekrogers/agent-prediction) | Go | 2026-03-14 | Prediction market agent for Drift BET, Polymarket, and Limitless — part of the Obey Agent Economy. |
 | [cre-risk-router](https://github.com/lancekrogers/cre-risk-router) | Go | 2026-03-02 | On-chain risk decision layer using Chainlink CRE — 8 sequential risk gates with DON-signed immutable decision recei... |
 | [hiero-plugin](https://github.com/lancekrogers/hiero-plugin) | TypeScript | 2026-02-18 | Hiero CLI plugin for camp workspace management with 5 scaffold templates for Hedera and 0G development patterns. |
 | [agent-defi](https://github.com/lancekrogers/agent-defi) | Go | 2026-02-18 | Autonomous Go DeFi agent on Base with ERC-4626 vault, Uniswap V3 trading, ERC-8004 identity, x402 payments, and CRE r... |
