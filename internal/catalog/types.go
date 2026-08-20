@@ -49,6 +49,7 @@ type Category struct {
 	Slug     string
 	Title    string
 	Desc     string
+	Blurb    string
 	Content  string // optional hand-written content from categories/<slug>.content.md
 	Projects []Project
 }
@@ -121,6 +122,7 @@ func GroupByCategory(projects []Project, categories map[string]CategoryMeta) []C
 			Slug:     slug,
 			Title:    meta.Title,
 			Desc:     meta.Desc,
+			Blurb:    meta.Blurb,
 			Projects: groups[slug],
 		}
 		result = append(result, cat)
@@ -137,6 +139,7 @@ func GroupByCategory(projects []Project, categories map[string]CategoryMeta) []C
 type CategoryMeta struct {
 	Title string
 	Desc  string
+	Blurb string // short phrase for the GitHub profile README table
 }
 
 // WriteRawFile writes repos-raw.yaml.
