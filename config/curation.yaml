@@ -66,9 +66,9 @@ catalog:
       - ai
       - devtools
     summary: |
-      Official Festival distribution and methodology hub. 14 stars. Complete documentation with Claude Code plugin integration.
+      Official Festival distribution and methodology hub. Complete documentation with Claude Code plugin integration.
     why_it_matters: |
-      Highest-starred Obedience Corp product. The public face of the Festival methodology.
+      The public face of the Festival methodology.
   Obedience-Corp/obey-shared:
     categories:
       - backend-infra
@@ -137,7 +137,7 @@ catalog:
     summary: |
       First Go SDK for Anthropic Claude Code CLI — streaming, session management, MCP integration, subagents, and production features.
     why_it_matters: |
-      40 stars. Released before official Anthropic SDKs existed. Most prominent open-source Go tool for Claude Code automation.
+      Released before official Anthropic SDKs existed. Most prominent open-source Go tool for Claude Code automation.
   lancekrogers/claude-kitchen-campaign:
     category: festival-campaigns
     summary: |
