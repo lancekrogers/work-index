@@ -8,6 +8,7 @@ owners:
   - Blockhead-Consulting
   - SwapBlocks
   - Obedience-Corp
+  - Festival-Examples
 
 # Owners for which forks should also be pulled (maintainer-level forks).
 # By default the sync uses `--source` to exclude forks; any owner listed

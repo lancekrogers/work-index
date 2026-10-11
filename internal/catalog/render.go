@@ -19,7 +19,7 @@ var DefaultCategories = map[string]CategoryMeta{
 	"blockchain-fintech":  {Title: "Blockchain & Fintech", Desc: "Smart contracts, DeFi protocols, fintech platforms, and web3 tooling."},
 	"devtools":            {Title: "Developer Tools", Desc: "CLIs, developer productivity tools, workflow automation, and build systems."},
 	"vim-plugins":         {Title: "Vim & Neovim Plugins", Desc: "Editor plugins for Vim and Neovim."},
-	"festival-campaigns":  {Title: "Festival Campaigns", Desc: "Public examples of the Festival methodology in action — real campaigns built with camp and fest."},
+	"festival-campaigns":  {Title: "Festival Camp Workspaces", Desc: "Public Camp workspaces showing the Festival methodology in action."},
 	"experiments":         {Title: "Experiments & Research", Desc: "Prototypes, explorations, and learning exercises."},
 }
 

@@ -8,6 +8,10 @@ CLIs, developer productivity tools, workflow automation, and build systems.
 
 | Project | Stack | Created | Summary |
 |---------|-------|---------|---------|
+| [camp-leverage-all](https://github.com/Obedience-Corp/camp-leverage-all) | Python | 2026-09-22 | Camp plugin that estimates personal engineering output across workspaces while deduplicating shared repositories. |
+| [judge-agent](https://github.com/Obedience-Corp/judge-agent) | Go | 2026-08-25 | Fest approval-judge hook that asks a separate coding-agent CLI to review checkpoint evidence before deciding. |
+| [fest-direction](https://github.com/Obedience-Corp/fest-direction) | Go | 2026-08-21 | Fest plugin that hashes and attests written direction separately from changing task execution state. |
+| [camp-buzz](https://github.com/Obedience-Corp/camp-buzz) | Go | 2026-08-11 | Optional Camp plugin that projects Festival status to Buzz channels through an operator-provided CLI and relay. |
 | [camp-graph](https://github.com/Obedience-Corp/camp-graph) | Go | 2026-02-26 | Knowledge graph visualization plugin for camp — maps campaign artifacts and code structure as queryable node graphs. |
 | [hiero-plugin](https://github.com/lancekrogers/hiero-plugin) | TypeScript | 2026-02-18 | Hiero CLI plugin for camp workspace management with 5 scaffold templates for Hedera and 0G development patterns. |
 | [tcount](https://github.com/lancekrogers/tcount) | Go | 2026-01-28 | Fast offline CLI token counter for OpenAI, Claude, Llama, and generic models with cost estimation and JSON output. |
@@ -26,4 +30,4 @@ CLIs, developer productivity tools, workflow automation, and build systems.
 
 ---
 
-*15 projects in this category. [Back to catalog](../README.md).*
+*19 projects in this category. [Back to catalog](../README.md).*
