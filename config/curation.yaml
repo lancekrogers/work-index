@@ -41,6 +41,10 @@ catalog:
   Blockhead-Consulting/RareRosesERC721A:
     category: blockchain-fintech
     summary: ERC721A NFT smart contract for the Rare Roses collection.
+  Festival-Examples/azx-camp:
+    category: festival-campaigns
+    summary: |
+      Camp workspace tracing Helix exploration, design, and hardening festival, with replay and review evidence.
   Obedience-Corp/camp:
     categories:
       - ai
@@ -48,12 +52,24 @@ catalog:
     summary: |
       Multi-project AI workspace manager with git submodule/worktree integration, shell navigation, and campaign-level operations.
     why_it_matters: Core product of the Festival methodology suite.
+  Obedience-Corp/camp-buzz:
+    categories:
+      - ai
+      - devtools
+    summary: |
+      Optional Camp plugin that projects Festival status to Buzz channels through an operator-provided CLI and relay.
   Obedience-Corp/camp-graph:
     categories:
       - ai
       - devtools
     summary: |
       Knowledge graph visualization plugin for camp — maps campaign artifacts and code structure as queryable node graphs.
+  Obedience-Corp/camp-leverage-all:
+    categories:
+      - ai
+      - devtools
+    summary: |
+      Camp plugin that estimates personal engineering output across workspaces while deduplicating shared repositories.
   Obedience-Corp/fest:
     categories:
       - ai
@@ -61,6 +77,12 @@ catalog:
     summary: |
       Festival Methodology CLI with 40+ commands for hierarchical planning and execution of complex AI projects.
     why_it_matters: Core product of the Festival methodology suite alongside camp.
+  Obedience-Corp/fest-direction:
+    categories:
+      - ai
+      - devtools
+    summary: |
+      Fest plugin that hashes and attests written direction separately from changing task execution state.
   Obedience-Corp/festival:
     categories:
       - ai
@@ -69,6 +91,12 @@ catalog:
       Official Festival distribution and methodology hub. Complete documentation with Claude Code plugin integration.
     why_it_matters: |
       The public face of the Festival methodology.
+  Obedience-Corp/judge-agent:
+    categories:
+      - ai
+      - devtools
+    summary: |
+      Fest approval-judge hook that asks a separate coding-agent CLI to review checkpoint evidence before deciding.
   Obedience-Corp/obey-shared:
     categories:
       - backend-infra
@@ -200,6 +228,10 @@ catalog:
       - blockchain-fintech
     summary: |
       Hiero CLI plugin for camp workspace management with 5 scaffold templates for Hedera and 0G development patterns.
+  lancekrogers/helix:
+    category: ai
+    summary: |
+      Helix clone hardened via Festival with spend, egress, CSP, and hosted-app domain controls.
   lancekrogers/iota_seed_generator:
     category: blockchain-fintech
     summary: |

@@ -14,13 +14,13 @@ var profileTmpl string
 
 // DefaultCategories returns the canonical category metadata.
 var DefaultCategories = map[string]CategoryMeta{
-	"ai": {Title: "AI", Desc: "AI/LLM tools, agent frameworks, inference infrastructure, and prompt engineering.", Blurb: "Agent runtimes, SDKs, voice"},
-	"backend-infra": {Title: "Backend & Infrastructure", Desc: "APIs, microservices, databases, cloud infrastructure, and the systems that hold everything together.", Blurb: "APIs, services, infra"},
+	"ai":                 {Title: "AI", Desc: "AI/LLM tools, agent frameworks, inference infrastructure, and prompt engineering.", Blurb: "Agent runtimes, SDKs, voice"},
+	"backend-infra":      {Title: "Backend & Infrastructure", Desc: "APIs, microservices, databases, cloud infrastructure, and the systems that hold everything together.", Blurb: "APIs, services, infra"},
 	"blockchain-fintech": {Title: "Blockchain & Fintech", Desc: "Smart contracts, DeFi protocols, fintech platforms, and web3 tooling.", Blurb: "Contracts, DeFi, prior fintech"},
-	"devtools": {Title: "Developer Tools", Desc: "CLIs, developer productivity tools, workflow automation, and build systems.", Blurb: "CLIs, scaffolding, editor tooling"},
-	"vim-plugins": {Title: "Vim & Neovim Plugins", Desc: "Editor plugins for Vim and Neovim.", Blurb: "Editor plugins"},
-	"festival-campaigns": {Title: "Festival Campaigns", Desc: "Public examples of the Festival methodology in action — real campaigns built with camp and fest.", Blurb: "Public methodology in use"},
-	"experiments": {Title: "Experiments & Research", Desc: "Prototypes, explorations, and learning exercises.", Blurb: "Prototypes and research"},
+	"devtools":           {Title: "Developer Tools", Desc: "CLIs, developer productivity tools, workflow automation, and build systems.", Blurb: "CLIs, scaffolding, editor tooling"},
+	"vim-plugins":        {Title: "Vim & Neovim Plugins", Desc: "Editor plugins for Vim and Neovim.", Blurb: "Editor plugins"},
+	"festival-campaigns": {Title: "Festival Camp Workspaces", Desc: "Public Camp workspaces showing the Festival methodology in action.", Blurb: "Explore, design, and execution records"},
+	"experiments":        {Title: "Experiments & Research", Desc: "Prototypes, explorations, and learning exercises.", Blurb: "Prototypes and research"},
 }
 
 const categoryTmpl = `# {{ .Title }}
@@ -205,5 +205,3 @@ func topByPriority(projects []Project, n int) []Project {
 	}
 	return prioritized
 }
-
-
